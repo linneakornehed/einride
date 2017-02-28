@@ -1,0 +1,111 @@
+.wrapper {
+  margin: 0 0 30rem;
+  flex: 1; }
+
+.container {
+  width: auto;
+  max-width: 1060px; }
+
+.start-container {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover; }
+
+.wrapper {
+  min-height: 100%; }
+
+p {
+  color: #222222; }
+
+h1 {
+  font-size: 4.2rem;
+  color: #007949;
+  font-weight: 600; }
+
+a {
+  font-weight: 400;
+  color: #0AB68E;
+  -webkit-transition: .25s ease-in-out;
+  transition: .4s ease-in-out;
+  cursor: pointer; }
+  a:hover {
+    color: #007949;
+    text-decoration: none; }
+
+.side-info {
+  font-size: 1.6rem;
+  list-style: none;
+  padding: 0;
+  color: #525252; }
+  .side-info__email {
+    margin-top: 1.825rem; }
+
+.side-title {
+  margin-top: 3rem;
+  font-weight: 600;
+  color: #323232;
+  font-size: 1.8rem; }
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  position: relative;
+  display: block; }
+
+.nav > a {
+  padding: 10px 12px;
+  font-size: 1.6rem !important; }
+
+.navbar-nav > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 26px;
+color: $color-white;
+  font-weight: 400; }
+
+.navbar-nav {
+  margin-top: 2.8rem;
+  float: right;
+  font-size: 1.6rem;
+  font-weight: 400; }
+
+.navbar-default {
+  background: $color-grey-5;
+  border: none; 
+  color: $color-white;
+  }
+
+.navbar-header {
+  margin-top: 0.8rem; }
+
+.navbar-header > svg {
+  fill: $color-grey-1;
+  width: 15rem; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background: transparent;
+  color: #323232; }
+
+.navbar-default .navbar-nav > a {
+    -webkit-transition: .25s ease-out;
+    transition: .4s ease-out;
+    color: #b2b2b2;
+    &:hover {
+          color: $color-white;
+    } 
+  }
+
+.navbar-default .navbar-toggle {
+  border-color: transparent; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $color-white;;
+  width: 25px; }
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 5px; }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent; }

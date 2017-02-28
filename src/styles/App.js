@@ -10,9 +10,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <Header />
-            <div className="start-page">
-              <h2>Welcome to Einride!</h2>
-            </div>
+          <h2>Welcome to Einride!</h2>
         </div>
         <div>
          </div>
