@@ -1,6 +1,4 @@
 import React from 'react'
-import FontAwesome from 'react-fontawesome'
-
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
 
 class Footer extends React.Component {
@@ -9,24 +7,35 @@ class Footer extends React.Component {
     return (
         <footer className="footer-container">
             <div className="main">
-                <div className="container">
+                <div className="container col-md-10 col-md-offset-1">
                     <div className="col-md-12">
-                        <div className="col-md-4 col-sm-6 footer-class">
-                            <h4 className="footer-heading">Einride AB</h4>
-                            <div className="info">Här kan en adress vara snygg</div>
-                            <div className="info">112 23 Somewhere</div>
-                            <div className="info">Sweden</div>
-                            <Link to="/">www.einride.eu</Link>
-                        </div>
-                        <div className="col-md-8 col-sm-6">
                         <div className="socials">
-                            <a><div className="social-facebook">FB</div></a>
-                            <a><div className="social-twitter">TW</div></a>
-                            <a><div className="social-linkedin">LI</div></a>
-                        </div>
+                            <a href="https://twitter.com/TeamEinride">
+                                <div className="social-item">
+                                    <img src="../images/twitter.svg" className="social-twitter" />
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/TeamEinride/">
+                                <div className="social-item">
+                                    <img src="../images/facebook.svg" className="social-facebook"/>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/company-beta/13250093/?pathWildcard=13250093">
+                                <div className="social-item">
+                                    <img src="../images/linkedin.svg" className="social-linkedin"/>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                <FontAwesome name='rocket' />
+                    <div className="col-md-12">
+                        <div className="footer-class">
+                            <div className="footer-heading">Einride AB </div>
+                            <div className="info">Holtermansgatan 1D </div>
+                            <div className="info">411 29 Göteborg </div>
+                            <div className="info">Sweden </div>
+                            <div className="info-link"><Link to="/">www.einride.eu </Link></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>

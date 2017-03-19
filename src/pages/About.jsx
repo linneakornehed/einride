@@ -20,7 +20,7 @@ class About extends React.Component {
                 </div>
                 <div className="col-md-7">
                     <div className="">
-                        <h1 className="article-title"></h1>
+                        <h1 className="article-title">Making the change</h1>
                         <div className="main-text">
                             Here at Einride, our goal is to renew the way we think about the environment for a more sustainable world. We see the problems of the transport industry today and we know that there is a better solution.    
                             We believe that humans have the choice to make the world a better place and we will provide the technology and services to do that. For too many years, the transport industry has failed to tackle their major problems, especially when it comes to pollution and the quality of life for their drivers.  Einride is solving that.    

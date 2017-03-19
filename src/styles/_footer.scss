@@ -1,9 +1,24 @@
 .footer-container {
-    background: $color-grey-4;
-    padding: 2rem;
-    color: $color-white;
+    background: $color-grey-1;
+    color: #757575;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
 }
 
-.footer-heading {
-    font-weight: 600;
+.footer-class {
+    display: flex;
+    justify-content: center;
+    padding: 45px 0;
+
+    .footer-heading {
+        margin-top: -1px;
+        padding: 0rem 2rem;
+    }
+    
+    .info, .info-link {
+        padding: 0rem 1rem;
+        display: block;
+    }
 }

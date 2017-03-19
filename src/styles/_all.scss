@@ -8,15 +8,16 @@ body {
     font-family: 'Karla', sans-serif;
     min-height: 100%;
     display: flex;
-    font-size: 14px;
+    font-size: 16px;
     flex-direction: column;
     vertical-align: baseline;
     -webkit-font-smoothing: antialiased;
 }
 
 .react-count-down {
-    font-size: 4rem;
+    font-size: 3.2rem;
     padding: 2rem;
+    font-weight: 700;
     color: $color-black;
     text-align: center;
 }
@@ -34,12 +35,17 @@ body {
 }
 
 p {
-    color: $color-black;
+    color: $color-grey-5!important;
 }
 
 h1 {
     font-size: 4.2rem;
     color: $color-grey-4;
+}
+
+h4 {
+    text-transform: uppercase;
+    color: $color-black;
 }
 
 a {
@@ -136,6 +142,7 @@ a {
 .navbar-toggle {
     margin-right: 0px;
     float: left;
+    margin-top: 6px;
 }
 
 .navbar-brand {
@@ -156,9 +163,14 @@ a {
 }
 
 .article-title {
-    font-size: 3.2rem;
+    font-size: 3.8rem;
     font-weight: 300;
     color: $color-black;
+    margin-bottom: 3rem;
+}
+
+.article-end {
+    margin-top: 2rem;
 }
 
 .App {

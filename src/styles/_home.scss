@@ -6,7 +6,8 @@
 
 .main-text {
     margin: 3rem 0;
-    line-height: 2.25rem;
+    line-height: 2.5rem;
+    color: $color-grey-5;
     h4 {
         font-weight: 600;
         line-height: 1.5rem;
@@ -16,6 +17,10 @@
 .main-title {
     font-size: 18px;
     font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .start-page {
@@ -51,8 +56,45 @@
     .navbar-header > svg {
         fill: $color-black;
     }
-    .navbar-default .navbar-toggle .icon-bar {
-            background-color: $color-grey-5;
-    }
+
     
+}
+
+@media only screen and (max-width: 760px) {
+    .App-header .navbar-default {
+        background-color: $color-grey-7!important;
+}
+
+    .navbar-nav {
+        background-color: transparent;
+    }
+    .navbar-collapse {
+        float: left;
+        box-shadow: none;
+        padding-bottom: 4rem;
+    }
+
+    .navbar-default .navbar-nav > a {
+        display: block;
+        float: left;
+        width: 100%;
+        padding: 1.2rem;
+    }
+    .navbar-default .navbar-nav > a {
+        color: $color-grey-1!important;
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    .navbar-header > svg {
+        fill: $color-white!important;
+        width: 14rem;
+    }
+    .start-page-container {
+        padding-top: 8vh;
+    }
+    .newsletter-input {
+        width: 30rem!important;
+    }
 }

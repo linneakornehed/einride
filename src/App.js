@@ -12,9 +12,9 @@ const BasicInputBox = React.createClass({
     render: function () {
         return (
             <div>
-                <label>{this.props.label}</label>
+                <label className="news-letter-title">{this.props.label}</label>
                 <br/>
-                <input type="text" onChange={this.props.valChange} value={ this.props.val}/>
+                <input type="text" onChange={this.props.valChange} value={ this.props.val} className="newsletter-input" placeholder="Sign up with your email"/>
                 <br/>
             </div>
         );
@@ -45,7 +45,7 @@ class App extends Component {
 
     renderThanks() {
         return (
-            <p key="thanks-key">We will keep you posted!</p>
+            <div key="thanks-key" className="newsletter-input news-letter-title">Thank you! We will keep you posted!</div>
         );
     }
 
@@ -64,7 +64,7 @@ class App extends Component {
                                 </ReactCSSTransitionReplace>
                             </div>
                         </div>
-                        <Video autoPlay muted
+                        <Video autoPlay loop muted
                                poster=""
                                className="background-video">
                             <source src="./images/einride-video.mp4" type="video/mp4"/>

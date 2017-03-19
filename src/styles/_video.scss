@@ -23,6 +23,12 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
+@media (min-aspect-ratio: 16/9) {
+    ._2jFFg {
+        max-height: none;
+    }
+}
+
 ._1CiqE {
     display: none;
 }

@@ -52,14 +52,14 @@ a {
 .navbar-nav {
   margin-top: 1.4rem;
   float: right;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400; 
   
     
   }
 
 .navbar-default {
-  background: $color-grey-6;
+  background: $color-grey-7;
   border: none; 
   color: $color-white;
   position: relative;
@@ -89,7 +89,7 @@ a:active {
 .navbar-default .navbar-nav > a {
     -webkit-transition: .25s ease-out;
     transition: .4s ease-out;
-    color: #b2b2b2;
+    color: $color-grey-2;
     &:hover {
           color: $color-white;
     } 
@@ -110,7 +110,18 @@ a:active {
   }
 
 .newsletter-signup {
+    justify-content: center;
+    display: flex;
     text-align: center;
+}
+
+.news-letter-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-top: 3rem;
+  text-shadow: 0.5px 1.2px 0.2px #999;
+  color: $color-white;
 }
 
 .fade-wait-leave {
@@ -132,4 +143,10 @@ a:active {
 
 .fade-wait-height {
   transition: height .6s ease-in-out;
+}
+
+.newsletter-input {
+  padding: 1.5rem 1rem;
+  width: 40rem;
+  border: none;
 }
