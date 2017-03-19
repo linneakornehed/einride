@@ -58,7 +58,7 @@ class App extends Component {
                         <div className="start-page-container">
                             <Countdown options={OPTIONS}/>
                             <div className="newsletter-signup">
-                                <ReactCSSTransitionReplace transitionName="cross-fade"
+                                <ReactCSSTransitionReplace transitionName="fade-wait"
                                                            transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
                                     {this.state.registered ? this.renderThanks() : this.renderForm()}
                                 </ReactCSSTransitionReplace>
@@ -79,7 +79,6 @@ class App extends Component {
 
     submit(e) {
         e.preventDefault();
-
         const url = 'http://einride.eu/____formmail/1/';
         const self = this;
 
