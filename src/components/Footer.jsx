@@ -1,4 +1,6 @@
 import React from 'react'
+import FontAwesome from 'react-fontawesome'
+
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
 
 class Footer extends React.Component {
@@ -24,6 +26,7 @@ class Footer extends React.Component {
                         </div>
                         </div>
                     </div>
+                <FontAwesome name='rocket' />
                 </div>
             </div>
         </footer>
