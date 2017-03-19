@@ -12,6 +12,7 @@ class Header extends React.Component {
             <div className="col-md-12">
               <Navbar collapseOnSelect>
                   <Navbar.Header>
+                    <Navbar.Toggle />
                     <Navbar.Brand>
                        <Link to="/">
                         <div className="navbar-header">
@@ -19,7 +20,6 @@ class Header extends React.Component {
                       </div>
                     </Link>
                     </Navbar.Brand>
-                    <Navbar.Toggle />
                   </Navbar.Header>
                   <Navbar.Collapse>
                     <Nav className="nav navbar-nav">

@@ -12,7 +12,7 @@ class About extends React.Component {
         <div className="wrapper">
         <div className="second-header">
             <Header />
-            <div className="container">
+            <div className="container page-section">
                 <div className="col-md-12">
                     <h3 className="main-title">
                         About Einride

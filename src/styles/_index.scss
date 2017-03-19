@@ -1,15 +1,8 @@
-.wrapper {
-  margin: 0 0 30rem;
-  flex: 1; }
-
 .start-container {
   height: 100%;
   width: 100%;
   min-height: 100vh;
   background-size: cover; }
-
-.wrapper {
-  min-height: 100%; }
 
 p {
   color: #222222; }
@@ -51,7 +44,7 @@ a {
   display: block; }
 
 .navbar-nav > a {
-  padding: 39px 35px 39px 25px;
+  padding: 20px 20px;
   color: $color-white;
   font-weight: 700; 
   }
@@ -63,11 +56,14 @@ a {
   font-weight: 400; }
 
 .navbar-default {
-  background: $color-grey-5;
+  background: $color-grey-6;
   border: none; 
   color: $color-white;
-  border: 1px solid transparent;
   position: relative;
+
+    .container {
+      width: auto;
+    }
   }
 
 .navbar {
