@@ -10,6 +10,7 @@
     "react-count-down": "^1.1.0",
     "react-dom": "^15.4.2",
     "react-font-awesome": "^1.0.3",
+    "react-fontawesome": "^1.5.0",
     "react-html5video": "^2.0.1",
     "react-router": "^3.0.2",
     "react-simple-countdown": "^1.2.1"
