@@ -2,10 +2,6 @@
   margin: 0 0 30rem;
   flex: 1; }
 
-.container {
-  width: auto;
-  max-width: 1060px; }
-
 .start-container {
   height: 100%;
   width: 100%;
@@ -54,19 +50,14 @@ a {
   position: relative;
   display: block; }
 
-.nav > a {
-  padding: 10px 12px;
-  font-size: 1.6rem !important; }
-
 .navbar-nav > a {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  line-height: 26px;
-color: $color-white;
-  font-weight: 400; }
+  padding: 39px 35px 39px 25px;
+  color: $color-white;
+  font-weight: 700; 
+  }
 
 .navbar-nav {
-  margin-top: 2.8rem;
+  margin-top: 1.4rem;
   float: right;
   font-size: 1.6rem;
   font-weight: 400; }
@@ -75,18 +66,26 @@ color: $color-white;
   background: $color-grey-5;
   border: none; 
   color: $color-white;
+  border: 1px solid transparent;
+  position: relative;
   }
 
-.navbar-header {
-  margin-top: 0.8rem; }
+.navbar {
+      margin-bottom: 0px;
+}
 
-.navbar-header > svg {
-  fill: $color-grey-1;
-  width: 15rem; }
+.navbar-header {
+  margin-top: 0.2rem; 
+  }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   background: transparent;
+  text-decoration: none;
   color: #323232; }
+
+a:active {
+  color: $color-grey-4;
+}
 
 .navbar-default .navbar-nav > a {
     -webkit-transition: .25s ease-out;
@@ -108,4 +107,5 @@ color: $color-white;
   margin-top: 5px; }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: transparent; }
+  background-color: transparent; 
+  }

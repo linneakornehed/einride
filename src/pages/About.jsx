@@ -20,11 +20,12 @@ class About extends React.Component {
                 </div>
                 <div className="col-md-7">
                     <div className="">
-                        <h1 className="article-title">Our goal is to re-new the way we think about environment for a more sustainible world.</h1>
+                        <h1 className="article-title"></h1>
                         <div className="main-text">
-                        Our goal is to re-new the way we think about environment for a more sustainible world. Our goal is to re-new the way we think about environment for a more sustainible world. Our goal is to re-new the way we think about environment for a more sustainible world. Our goal is to 
-                        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                        environment for a more sustainible world. Our goal is to re-new the way we think about environment for a more sustainible world. Our goal is to re-new the way we think about environment for a more sustainible world.
+                            Here at Einride, our goal is to renew the way we think about the environment for a more sustainable world. We see the problems of the transport industry today and we know that there is a better solution.    
+                            We believe that humans have the choice to make the world a better place and we will provide the technology and services to do that. For too many years, the transport industry has failed to tackle their major problems, especially when it comes to pollution and the quality of life for their drivers.  Einride is solving that.    
+                            Einride is a constantly growing team that has the knowledge and determination to fix the problems of the transport industry. We are located conveniently both in Stockholm and Gothenburg so if you are in the neighborhood, stop by and see what we are all about!  
+                            Feel free to contact us at any time if you have any questions or want to learn more about our team.  
                         </div>
                     </div>
                 </div>

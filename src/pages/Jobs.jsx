@@ -19,9 +19,9 @@ class Jobs extends React.Component {
                 </div>
                 <div className="col-md-12">
                     <div className="">
-                        <h1 className="article-title">Do you have what it takes? Do do do do dodo </h1>
+                        <h1 className="article-title">Do you have what it takes? </h1>
                         <div className="main-text">
-                            Do you have what it takes? Do do do do dodo 
+                            Do you have what it takes?
                         </div>
                         <div className="main-text">
                            <h4>Data Engineer <div className="sm-btn">New</div></h4>

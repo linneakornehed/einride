@@ -10,7 +10,7 @@ class Footer extends React.Component {
                 <div className="container">
                     <div className="col-md-12">
                         <div className="col-md-4 col-sm-6 footer-class">
-                            <h4>Einride AB</h4>
+                            <h4 className="footer-heading">Einride AB</h4>
                             <div className="info">Här kan en adress vara snygg</div>
                             <div className="info">112 23 Somewhere</div>
                             <div className="info">Sweden</div>
