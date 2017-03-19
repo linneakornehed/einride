@@ -8,6 +8,7 @@
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-count-down": "^1.1.0",
+    "react-css-transition-replace": "^2.2.0",
     "react-dom": "^15.4.2",
     "react-font-awesome": "^1.0.3",
     "react-html5video": "^2.0.1",
