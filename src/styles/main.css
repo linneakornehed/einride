@@ -243,7 +243,7 @@ a {
 .App-header .navbar-header > svg {
   fill: #121212; }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 760px) {
   .App-header .navbar-default {
     background-color: #323232 !important; }
   .navbar-nav {
@@ -347,9 +347,6 @@ a:hover {
   background: transparent;
   text-decoration: none;
   color: #323232; }
-
-a:active {
-  color: #525252; }
 
 .navbar-default .navbar-nav > a {
   -webkit-transition: .25s ease-out;
