@@ -8,7 +8,7 @@ body {
     font-family: 'Karla', sans-serif;
     min-height: 100%;
     display: flex;
-    font-size: 16px;
+    font-size: 18px;
     flex-direction: column;
     vertical-align: baseline;
     -webkit-font-smoothing: antialiased;
@@ -35,7 +35,7 @@ body {
 }
 
 p {
-    color: $color-grey-5!important;
+    color: $color-grey-4!important;
 }
 
 h1 {
@@ -169,6 +169,13 @@ a {
     margin-bottom: 3rem;
 }
 
+@media only screen and (max-width: 640px) {
+    .article-title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
 .article-end {
     margin-top: 2rem;
 }
@@ -179,4 +186,8 @@ a {
 
 .App-header {
     width: 100%;
+}
+
+.thank-you {
+    margin-left: 0;
 }

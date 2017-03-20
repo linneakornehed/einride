@@ -8,3 +8,19 @@
     width: 40px;
     display: inline-block;
 }
+
+.btn {
+    background-color: $color-primary-2;
+    color: $color-white;
+    padding: 1.65rem 2rem;
+    margin-top: -2px;
+    border-radius: 0;
+    &:hover {
+        color: $color-white;
+        background-color: $color-primary-3;
+    }
+}
+
+.input-field {
+    display: inline-block;
+}

@@ -11,17 +11,16 @@ const OPTIONS = {endDate: '04/03/2017'}
 const BasicInputBox = React.createClass({
     render: function () {
         return (
-            <div>
+            <div className="input-field">
                 <label className="news-letter-title">{this.props.label}</label>
                 <br/>
                 <input type="text" onChange={this.props.valChange} value={ this.props.val} className="newsletter-input" placeholder="Sign up with your email"/>
-                <br/>
             </div>
         );
     }
 });
 
-class App extends Component {
+class App extends Component {   
     constructor() {
         super();
         this.state = {email: "", registered: false};
@@ -33,13 +32,13 @@ class App extends Component {
         })
     }
 
-
     renderForm() {
         return (
-            <form key="form-key" onSubmit={this.submit.bind(this)}>
-                <BasicInputBox label="Follow our journey" valChange={this.emailChange.bind(this)}
-                               val={this.state.email}/>
-            </form>
+                <form key="form-key" onSubmit={this.submit.bind(this)}>
+                    <BasicInputBox label="Follow our journey" valChange={this.emailChange.bind(this)}
+                                val={this.state.email}/>
+                    <button className="btn"> Send</button>
+                </form>
         );
     }
 
@@ -54,24 +53,31 @@ class App extends Component {
             <div className="App">
                 <div className="App-header">
                     <Header />
-                    <div className="start-page">
-                        <div className="start-page-container">
-                            <Countdown options={OPTIONS}/>
-                            <div className="newsletter-signup">
-                                <ReactCSSTransitionReplace transitionName="fade-wait"
-                                                           transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
+                        <div className="start-page">
+                            <div className="start-page-container">
+                                <Countdown options={OPTIONS}/>
+                                <div className="newsletter-signup">
+                                    <ReactCSSTransitionReplace transitionName="fade-wait"
+                                                                transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
                                     {this.state.registered ? this.renderThanks() : this.renderForm()}
-                                </ReactCSSTransitionReplace>
+                                    </ReactCSSTransitionReplace>
+                                </div>
+                            </div>
+                            <div className="hide-on-mobile">
+                                <Video autoPlay loop muted
+                                    poster=""
+                                    className="background-video">
+                                    <source src="./images/einride-video.mp4" type="video/mp4"/>
+                                </Video>
+                            </div>
+                            <div className="hide-on-desktop">
+                                <picture>
+                                    <img src="./images/mobile-bg.jpg" />
+                                </picture>
+                            </div>
                             </div>
                         </div>
-                        <Video autoPlay loop muted
-                               poster=""
-                               className="background-video">
-                            <source src="./images/einride-video.mp4" type="video/mp4"/>
-                        </Video>
-                    </div>
-                </div>
-                <div>
+                    <div>
                 </div>
             </div>
         );

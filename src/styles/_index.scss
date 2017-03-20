@@ -14,7 +14,7 @@ h1 {
 
 a {
   font-weight: 400;
-  color: #0AB68E;
+  color: $color-primary-2;
   -webkit-transition: .25s ease-in-out;
   transition: .4s ease-in-out;
   cursor: pointer; }
@@ -119,10 +119,16 @@ a:active {
   font-size: 1.8rem;
   text-transform: uppercase;
   padding: 1rem;
+  margin-left: 74.5px;
+  font-weight: 700;
   margin-top: 3rem;
   text-shadow: 0.5px 1.2px 0.2px #999;
   color: $color-white;
 }
+
+ .thank-you {
+   margin-left: 0;
+ }
 
 .fade-wait-leave {
   opacity: 1;

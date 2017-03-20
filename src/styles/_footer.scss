@@ -1,5 +1,6 @@
 .footer-container {
-    background: $color-grey-1;
+    box-shadow: inset 1px 1px 3px 1px rgba(0,0,0,.06);
+    background: $color-grey-0;
     color: #757575;
     display: flex;
     justify-content: center;
@@ -8,17 +9,17 @@
 }
 
 .footer-class {
-    display: flex;
+    display: block;
     justify-content: center;
+    text-align: center;
     padding: 45px 0;
 
     .footer-heading {
-        margin-top: -1px;
-        padding: 0rem 2rem;
+        padding: 0.5rem;
     }
     
     .info, .info-link {
-        padding: 0rem 1rem;
+        padding: 0.5rem;
         display: block;
     }
 }
