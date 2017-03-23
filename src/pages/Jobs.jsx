@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
+import ImageSlider from '../components/ImageSlider.jsx';
 
 class Jobs extends React.Component {
 
@@ -37,6 +37,9 @@ class Jobs extends React.Component {
                                 No matter your talent, if you have the passion, you can probably contribute.</p>
                             </div>
                         </div>
+                                            <div id="slider-container">
+                    <ImageSlider />
+                    </div>
                     </div>
                     <div className="col-md-4 col-md-offset-1">
                         <h4 className="side-title">For more info contact:</h4>

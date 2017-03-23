@@ -1,5 +1,4 @@
 import React from 'react';
-import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 

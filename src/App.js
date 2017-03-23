@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import logo from './logo.svg'
 import Header from './components/Header.jsx'
 import Countdown from 'react-count-down'
 import {DefaultPlayer as Video} from 'react-html5video'
@@ -12,18 +11,46 @@ const BasicInputBox = React.createClass({
     render: function () {
         return (
             <div className="input-field">
-                <label className="news-letter-title">{this.props.label}</label>
                 <br/>
                 <input type="text" onChange={this.props.valChange} value={ this.props.val} className="newsletter-input" placeholder="Sign up with your email"/>
             </div>
         );
     }
-});
+})
 
 class App extends Component {   
     constructor() {
-        super();
-        this.state = {email: "", registered: false};
+        super()
+        this.state = { email: "", registered: false,
+                       windowWidth: window.innerWidth }
+    }
+
+    handleResize() {
+    this.setState({windowWidth: window.innerWidth});
+    }
+
+    componentDidMount() {
+    window.addEventListener('resize', this.handleResize.bind(this));
+    }
+
+    componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize.bind(this));
+    }
+
+    renderWidth() {
+        if(this.state.windowWidth >= 640) {
+            return this.playVideo()
+        } else ''
+    }
+
+    playVideo() {
+        return (
+            <Video autoPlay muted
+                poster="./images/mobile-bg.jpg"
+                className="background-video">
+                <source src="./images/einride-video.mp4" type="video/mp4"/>
+            </Video>
+        )
     }
 
     emailChange(e) {
@@ -34,58 +61,55 @@ class App extends Component {
 
     renderForm() {
         return (
+            <div>
+                <label className="news-letter-title">Follow our journey</label>
                 <form key="form-key" onSubmit={this.submit.bind(this)}>
-                    <BasicInputBox label="Follow our journey" valChange={this.emailChange.bind(this)}
-                                val={this.state.email}/>
+                    <BasicInputBox valChange={this.emailChange.bind(this)}
+                                    val={this.state.email}/>
                     <button className="btn"> Send</button>
                 </form>
-        );
+            </div>
+        )
     }
 
     renderThanks() {
         return (
             <div key="thanks-key" className="newsletter-input news-letter-title">Thank you! We will keep you posted!</div>
-        );
+        )
     }
 
     render() {
         return (
-            <div className="App">
-                <div className="App-header">
-                    <Header />
-                        <div className="start-page">
-                            <div className="start-page-container">
-                                <Countdown options={OPTIONS}/>
-                                <div className="newsletter-signup">
-                                    <ReactCSSTransitionReplace transitionName="fade-wait"
-                                                                transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
-                                    {this.state.registered ? this.renderThanks() : this.renderForm()}
-                                    </ReactCSSTransitionReplace>
-                                </div>
-                            </div>
-                            <div className="hide-on-mobile">
-                                <Video autoPlay loop muted
-                                    poster=""
-                                    className="background-video">
-                                    <source src="./images/einride-video.mp4" type="video/mp4"/>
-                                </Video>
-                            </div>
-                            <div className="hide-on-desktop">
-                                <picture>
-                                    <img src="./images/mobile-bg.jpg" />
-                                </picture>
-                            </div>
+        <div className="App">
+            <div className="App-header">
+                <Header />
+                    <div className="start-page">
+                        <div className="start-page-container">
+                            <Countdown options={OPTIONS}/>
+                            <div className="newsletter-signup">
+                                <ReactCSSTransitionReplace transitionName="fade-wait"
+                                                            transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
+                                {this.state.registered ? this.renderThanks() : this.renderForm()}
+                                </ReactCSSTransitionReplace>
                             </div>
                         </div>
-                    <div>
-                </div>
+                        <div className="hide-on-desktop">
+                            <div className="start-page-bg"></div>
+                        </div>
+                        <div className="hide-on-mobile">
+                            {this.renderWidth()}
+                        </div>
+                        </div>
+                    </div>
+                <div>
             </div>
-        );
+        </div>
+        )
     }
 
     submit(e) {
         e.preventDefault();
-        const url = 'http://einride.eu/____formmail/1/';
+        const url = 'https://einride.eu/____formmail/1/';
         const self = this;
 
         const formData = new FormData();
@@ -106,7 +130,7 @@ class App extends Component {
         }).catch(function (err) {
             // Error :(
             console.error("Failed to sign up for newsletter", err);
-        });
+        })
         return false;
     }
 }

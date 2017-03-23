@@ -12,16 +12,6 @@ h1 {
   color: #007949;
   font-weight: 600; }
 
-a {
-  font-weight: 400;
-  color: $color-primary-2;
-  -webkit-transition: .25s ease-in-out;
-  transition: .4s ease-in-out;
-  cursor: pointer; }
-  a:hover {
-    color: #007949;
-    text-decoration: none; }
-
 .side-info {
   font-size: 1.6rem;
   list-style: none;
@@ -63,6 +53,7 @@ a {
   border: none; 
   color: $color-white;
   position: relative;
+  box-shadow: none;
 
     .container {
       width: auto;
@@ -81,15 +72,6 @@ a {
   background: transparent;
   text-decoration: none;
   color: #323232; }
-
-.navbar-default .navbar-nav > a {
-    -webkit-transition: .25s ease-out;
-    transition: .4s ease-out;
-    color: $color-grey-2;
-    &:hover {
-          color: $color-white;
-    } 
-  }
 
 .navbar-default .navbar-toggle {
   border-color: transparent; }
@@ -112,14 +94,9 @@ a {
 }
 
 .news-letter-title {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  padding: 1rem;
-  margin-left: 74.5px;
-  font-weight: 700;
-  margin-top: 3rem;
-  text-shadow: 0.5px 1.2px 0.2px #999;
-  color: $color-white;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: $color-black;
 }
 
  .thank-you {
@@ -150,5 +127,6 @@ a {
 .newsletter-input {
   padding: 1.5rem 1rem;
   width: 40rem;
+  font-size: 1.4rem;
   border: none;
 }

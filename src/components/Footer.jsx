@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
+import { Link } from 'react-router'
 
 class Footer extends React.Component {
 
@@ -12,22 +12,22 @@ class Footer extends React.Component {
                         <div className="socials">
                             <a href="https://twitter.com/TeamEinride">
                                 <div className="social-item">
-                                    <img src="./images/twitter.svg" className="social-twitter" />
+                                    <img src="./images/twitter.svg" className="social-twitter" alt="twitter" />
                                 </div>
                             </a>
                             <a href="https://www.linkedin.com/company-beta/13250093/?pathWildcard=13250093">
                                 <div className="social-item">
-                                    <img src="./images/linkedin.svg" className="social-linkedin"/>
+                                    <img src="./images/linkedin.svg" className="social-linkedin" alt="linkedin"/>
                                 </div>
                             </a>
                             <a href="https://www.facebook.com/TeamEinride/">
                                 <div className="social-item">
-                                    <img src="./images/facebook.svg" className="social-facebook"/>
+                                    <img src="./images/facebook.svg" className="social-facebook" alt="facebook"/>
                                 </div>
                             </a>
                             <a href="http://instagram.com/teameinride">
                                 <div className="social-item">
-                                    <img src="./images/instagram.svg" className="social-instagram"/>
+                                    <img src="./images/instagram.svg" className="social-instagram" alt="instagram"/>
                                 </div>
                             </a>
                         </div>
