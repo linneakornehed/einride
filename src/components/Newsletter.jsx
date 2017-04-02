@@ -60,9 +60,8 @@ class Newsletter extends Component {
 
     submit(e) {
         e.preventDefault();
-        const url = 'https://einride.eu/____formmail/1/';
+        const url = window.location.protocol + '//einride.eu/____formmail/1/';
         const self = this;
-
         const formData = new FormData();
         // From reverse-engineering the current homepage
         formData.append('recipient', 'news@einride.eu');
