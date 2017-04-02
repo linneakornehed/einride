@@ -38,7 +38,6 @@ class Footer extends React.Component {
                             <div className="info">Holtermansgatan 1D </div>
                             <div className="info">411 29 Göteborg </div>
                             <div className="info">Sweden </div>
-                            <div className="info-link"><Link to="/">www.einride.eu </Link></div>
                         </div>
                     </div>
                 </div>

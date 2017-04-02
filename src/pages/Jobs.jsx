@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import ImageSlider from '../components/ImageSlider.jsx';
 
 class Jobs extends React.Component {
 
@@ -38,7 +37,6 @@ class Jobs extends React.Component {
                             </div>
                         </div>
                                             <div id="slider-container">
-                    <ImageSlider />
                     </div>
                     </div>
                     <div className="col-md-4 col-md-offset-1">

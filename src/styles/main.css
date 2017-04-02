@@ -79,8 +79,7 @@ a {
 .navbar-nav > a {
   padding-top: 15px;
   padding-bottom: 15px;
-  line-height: 26px;
-  font-weight: 400; }
+  line-height: 40px; }
 
 .navbar-nav {
   margin-top: 2.8rem;
@@ -125,7 +124,8 @@ a {
   margin-top: 6px; }
 
 .navbar-brand {
-  padding: 1.5rem 0; }
+  padding: 1.5rem 0;
+  line-height: 35px; }
 
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 5px; }
@@ -158,6 +158,55 @@ a {
 
 .is-active {
   color: green; }
+
+.App-header .navbar-default {
+  background: transparent;
+  color: #ffffff;
+  box-shadow: none; }
+
+.App-header .navbar-default .navbar-nav > a {
+  color: #4c4c4c; }
+  .App-header .navbar-default .navbar-nav > a:hover {
+    color: #525252; }
+
+.App-header .navbar-header > svg {
+  fill: #121212; }
+
+@media only screen and (max-width: 760px) {
+  .App-header .navbar-default {
+    background-color: #323232 !important; }
+  .navbar-nav {
+    background-color: transparent; }
+  .navbar-collapse {
+    float: left;
+    box-shadow: none;
+    padding-bottom: 2rem; }
+  .navbar-default .navbar-nav > a {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 1.2rem; }
+  .navbar-default .navbar-nav > a {
+    color: #f7f7f7 !important; }
+    .navbar-default .navbar-nav > a:hover {
+      color: #ffffff; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #7d7d7d; }
+  .navbar-header > svg {
+    fill: #ffffff !important;
+    width: 14rem; }
+  .start-page-container {
+    padding-top: 5vh;
+    position: absolute;
+    z-index: 10; }
+  .newsletter-input {
+    width: 20rem !important; }
+  .btn {
+    margin-left: 5px;
+    padding: 1.4rem 1rem;
+    border-radius: 4px; }
+  .react-count-down {
+    font-size: 2.2rem; } }
 
 .sm-btn {
   background-color: #0AB68E;
@@ -249,55 +298,6 @@ a {
 .page-section {
   padding-top: 2rem; }
 
-.App-header .navbar-default {
-  background: transparent;
-  color: #ffffff;
-  box-shadow: none; }
-
-.App-header .navbar-default .navbar-nav > a {
-  color: #4c4c4c; }
-  .App-header .navbar-default .navbar-nav > a:hover {
-    color: #525252; }
-
-.App-header .navbar-header > svg {
-  fill: #121212; }
-
-@media only screen and (max-width: 760px) {
-  .App-header .navbar-default {
-    background-color: #323232 !important; }
-  .navbar-nav {
-    background-color: transparent; }
-  .navbar-collapse {
-    float: left;
-    box-shadow: none;
-    padding-bottom: 2rem; }
-  .navbar-default .navbar-nav > a {
-    display: block;
-    float: left;
-    width: 100%;
-    padding: 1.2rem; }
-  .navbar-default .navbar-nav > a {
-    color: #f7f7f7 !important; }
-    .navbar-default .navbar-nav > a:hover {
-      color: #ffffff; }
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: #7d7d7d; }
-  .navbar-header > svg {
-    fill: #ffffff !important;
-    width: 14rem; }
-  .start-page-container {
-    padding-top: 5vh;
-    position: absolute;
-    z-index: 10; }
-  .newsletter-input {
-    width: 20rem !important; }
-  .btn {
-    margin-left: 5px;
-    padding: 1.4rem 1rem;
-    border-radius: 4px; }
-  .react-count-down {
-    font-size: 2.2rem; } }
-
 .start-container {
   height: 100%;
   width: 100%;
@@ -334,11 +334,6 @@ h1 {
   position: relative;
   display: block; }
 
-.navbar-nav > a {
-  padding: 20px 20px;
-  color: #ffffff;
-  font-weight: 700; }
-
 .navbar-nav {
   margin-top: 1.4rem;
   float: right;
@@ -355,7 +350,8 @@ h1 {
     width: auto; }
 
 .navbar {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  min-height: 7rem; }
 
 .navbar-header {
   margin-top: 0.2rem; }

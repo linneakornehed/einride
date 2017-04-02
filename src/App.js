@@ -12,7 +12,7 @@ const BasicInputBox = React.createClass({
         return (
             <div className="input-field">
                 <br/>
-                <input type="text" onChange={this.props.valChange} value={ this.props.val} className="newsletter-input" placeholder="Sign up with your email"/>
+                <input type="text" ref="input-field" onChange={this.props.valChange} value={ this.props.val} className="newsletter-input" placeholder="Sign up with your email"/>
             </div>
         );
     }
@@ -21,8 +21,11 @@ const BasicInputBox = React.createClass({
 class App extends Component {   
     constructor() {
         super()
-        this.state = { email: "", registered: false,
-                       windowWidth: window.innerWidth }
+        this.state = { 
+                        email: "", 
+                        registered: false,
+                        windowWidth: window.innerWidth 
+                    }
     }
 
     handleResize() {
@@ -108,7 +111,9 @@ class App extends Component {
     }
 
     submit(e) {
+
         e.preventDefault();
+
         const url = 'https://einride.eu/____formmail/1/';
         const self = this;
 
