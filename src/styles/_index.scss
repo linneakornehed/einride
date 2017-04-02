@@ -34,30 +34,33 @@ h1 {
   display: block; }
 
 .navbar-nav {
-  margin-top: 1.4rem;
+  margin-top: 2.8rem;
   float: right;
   font-size: 1.4rem;
-  font-weight: 400;
- 
-  
-    
+  font-weight: 600;    
   }
 
-.navbar-default {
-  background: $color-grey-7;
-  border: none; 
-  color: $color-white;
-  position: relative;
-  box-shadow: none;
 
-    .container {
-      width: auto;
+    .navbar-default {
+        background: transparent;
+        color: #ffffff;
+        box-shadow: none;
     }
-  }
+    .navbar-default .navbar-nav > a {
+        color: $color-grey-6;
+        &:hover {
+            color: $color-grey-4;
+        }
+    }
+
+    .navbar-header > svg {
+        fill: $color-black;
+    }
+
 
 .navbar {
       margin-bottom: 0px;
-      min-height: 7rem;
+      min-height: 8rem;
 }
 
 .navbar-header {
@@ -90,10 +93,41 @@ h1 {
 }
 
 .news-letter-title {
-  font-size: 2.5rem;
+  padding: 35px 21% 25px;
+  font-size: 3.25rem;
   font-weight: 300;
   color: $color-black;
 }
+
+    @media screen and (max-width: 480px) {
+    .news-letter-title {
+       font-size: 1.8rem;
+    }
+    .start-page__video {
+      height: 250px;
+    }
+    .start-page__column {
+      min-height: 25rem;
+      padding: 10px 10% 15px;
+    }
+    .start-page__icon {
+      min-height: 5rem;
+    }
+    .start-page__section-1--text {
+      font-size: 1.4rem;
+    }
+    .start-page__section-1 {
+        padding: 35px 2.5% 35px;
+    }
+    .section__video-container {
+      height: 250px!important;
+    }
+    .section__small-box {
+      margin-top: 2rem;
+    }
+  }
+
+
 
  .thank-you {
    margin-left: 0;
@@ -121,8 +155,12 @@ h1 {
 }
 
 .newsletter-input {
-  padding: 1.5rem 1rem;
+  padding: 2rem 1.5rem;
   width: 40rem;
   font-size: 1.4rem;
-  border: none;
+  border: 1px solid $color-grey-3;
+}
+
+  textarea:focus, input:focus{
+    outline: none;
 }

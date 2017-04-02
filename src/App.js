@@ -1,144 +1,68 @@
 import React, {Component} from 'react'
 import Header from './components/Header.jsx'
-import Countdown from 'react-count-down'
-import {DefaultPlayer as Video} from 'react-html5video'
-import 'react-html5video/dist/styles.css'
-import ReactCSSTransitionReplace from 'react-css-transition-replace';
+import Footer from './components/Footer.jsx'
+import Newsletter from './components/Newsletter.jsx'
+import Video from './components/Video.jsx'
 
-const OPTIONS = {endDate: '04/03/2017'}
-
-const BasicInputBox = React.createClass({
-    render: function () {
-        return (
-            <div className="input-field">
-                <br/>
-                <input type="text" ref="input-field" onChange={this.props.valChange} value={ this.props.val} className="newsletter-input" placeholder="Sign up with your email"/>
-            </div>
-        );
-    }
-})
 
 class App extends Component {   
     constructor() {
         super()
-        this.state = { 
-                        email: "", 
-                        registered: false,
-                        windowWidth: window.innerWidth 
-                    }
-    }
-
-    handleResize() {
-    this.setState({windowWidth: window.innerWidth});
-    }
-
-    componentDidMount() {
-    window.addEventListener('resize', this.handleResize.bind(this));
-    }
-
-    componentWillUnmount() {
-    window.removeEventListener('resize', this.handleResize.bind(this));
-    }
-
-    renderWidth() {
-        if(this.state.windowWidth >= 640) {
-            return this.playVideo()
-        } else ''
-    }
-
-    playVideo() {
-        return (
-            <Video autoPlay muted
-                poster="./images/mobile-bg.jpg"
-                className="background-video">
-                <source src="./images/einride-video.mp4" type="video/mp4"/>
-            </Video>
-        )
-    }
-
-    emailChange(e) {
-        this.setState({
-            email: e.target.value
-        })
-    }
-
-    renderForm() {
-        return (
-            <div>
-                <label className="news-letter-title">Follow our journey</label>
-                <form key="form-key" onSubmit={this.submit.bind(this)}>
-                    <BasicInputBox valChange={this.emailChange.bind(this)}
-                                    val={this.state.email}/>
-                    <button className="btn"> Send</button>
-                </form>
-            </div>
-        )
-    }
-
-    renderThanks() {
-        return (
-            <div key="thanks-key" className="newsletter-input news-letter-title">Thank you! We will keep you posted!</div>
-        )
     }
 
     render() {
         return (
         <div className="App">
+        <div className="wrapper">
             <div className="App-header">
                 <Header />
                     <div className="start-page">
-                        <div className="start-page-container">
-                            <Countdown options={OPTIONS}/>
-                            <div className="newsletter-signup">
-                                <ReactCSSTransitionReplace transitionName="fade-wait"
-                                                            transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
-                                {this.state.registered ? this.renderThanks() : this.renderForm()}
-                                </ReactCSSTransitionReplace>
+                            <div className="start-page__video">
+                                <Video />
                             </div>
-                        </div>
-                        <div className="hide-on-desktop">
-                            <div className="start-page-bg"></div>
-                        </div>
-                        <div className="hide-on-mobile">
-                            {this.renderWidth()}
-                        </div>
-                        </div>
+                            <div className="start-page__conatiner">
+                                <div className="start-page__section-1">
+                                    <div className="start-page__section-1--text content-wrapper">
+                                        This is not a company, it’s a movement. Einride is installing the world’s first completely emission-free, road-based transportation system. We are rethinking the entire supply-chain infrastructure from the ground up, creating the transport solution of the future.
+                                        Einride transforms the impact of the supply chain industry – removing dirty, polluting, inefficient ve- hicles from the entire system. Noise is reduced, congestion is relieved, and road safety is improved. We are also transforming the economy of change. Traditionally, costs have gone up as planetary impact goes down – but with Einride there is no sustainability premium, rather it’s a sustainability advantage.
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="start-page__section-2">
+                                <h4 className="section-title"></h4>
+                                <div className="row">
+                                    <div className="col-md-4 start-page__column">
+                                        <img className="start-page__icon" src="./images/cloud-icon.svg" />
+                                        <div className="start-page__column--title">Environment</div>
+                                        <div className="start-page__column--text">Carbon-neutral electric vehicles that lower the environmental impact</div>
+                                    </div>
+                                    <div className="col-md-4 start-page__column">
+                                        <img className="start-page__icon start-page__icon--wheel" src="./images/wheel-icon-2.svg" />
+                                        <div className="start-page__column--title">Self- and remote drive</div>
+                                     <div className="start-page__column--text">
+                                        Self-drive technology. Driver centres for remote driving.
+                                        We will improve industry standards for the workers and create new kind of jobs
+                                    </div>
+                                    </div>
+                                    <div className="col-md-4 start-page__column">
+                                        <img className="start-page__icon start-page__icon--wheel" src="./images/chain-icon.svg" />
+                                        <div className="start-page__column--title">Reduced cost </div>
+                                        <div className="start-page__column--text">
+                                            Industry agnostic supply chain solutions. Create an enhanced cost efficiency with transports
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <Newsletter />
+                    </div>
                     </div>
                 <div>
             </div>
+            <Footer />
         </div>
+    </div>
         )
-    }
-
-    submit(e) {
-
-        e.preventDefault();
-
-        const url = 'https://einride.eu/____formmail/1/';
-        const self = this;
-
-        const formData = new FormData();
-        // From reverse-engineering the current homepage
-        formData.append('recipient', 'news@einride.eu');
-        formData.append('email', 'news@einride.eu');
-        formData.append('subject', 'New message via contact form on einride.eu - Land page');
-        formData.append('We are LAUNCHING soon - sign up for exciting news', this.state.email);
-        formData.append('replyto', this.state.email);
-
-        fetch(url, {
-            method: 'POST',
-            mode: 'no-cors',
-            body: formData
-        }).then(function (response) {
-            console.log(response);
-            self.setState({registered: true});
-        }).catch(function (err) {
-            // Error :(
-            console.error("Failed to sign up for newsletter", err);
-        })
-        return false;
     }
 }
 
-
-export default App;
+export default App

@@ -10,18 +10,18 @@
 }
 
 .btn {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: $color-primary-1;
     color: $color-white;
     text-transform: uppercase;
     font-weight: 700;    color: $color-white;
-    padding: 1.4rem 3rem;
-    margin-top: 2px;
+    padding: 2rem 2rem;
+    outline: none;
     margin-left: 0.5rem;
     border-radius: 0;
     transition: 0.5s ease-in;
     &:hover {
         color: $color-white;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: $color-primary-2;
         border: 1px solid white;
     }
     &:focus {

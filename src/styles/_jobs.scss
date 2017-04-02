@@ -1,0 +1,17 @@
+.job-page {
+    &__column {
+        padding: 30px 2.5% 25px;
+        min-height: 34rem;
+        border-right: 1px solid $color-grey-2;
+        text-align: left;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+    &__title {
+        text-align: center;
+        font-size: 2rem;
+        padding: 0px 2.5% 25px;
+    }
+}

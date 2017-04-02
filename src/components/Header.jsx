@@ -23,9 +23,10 @@ class Header extends React.Component {
                   <Navbar.Collapse>
                     <Nav className="nav navbar-nav">
                       <Link activeClassName='is-active' to="/about">About</Link>
-                      <Link activeClassName='is-active' to="/jobs">Join the team</Link>
+                      <Link activeClassName='is-active' to="/jobs">Join our team</Link>
                       <Link activeClassName='is-active' to="/investor">Investor relations</Link>
                       <Link activeClassName='is-active' to="/contact">Contact us</Link>
+                      <a href="http://news.einride.eu/">News</a>
                     </Nav>
                   </Navbar.Collapse>
                 </Navbar>
