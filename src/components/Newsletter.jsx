@@ -31,7 +31,7 @@ class Newsletter extends Component {
     renderForm() {
         return (
             <div className="start-page__section-4">
-                <label className="news-letter-title">Sign up to show your support for carbondioxid free heavy trucks</label>
+                <label className="news-letter-title">Sign up to show your support for carbon dioxide free heavy trucks</label>
                 <form key="form-key" onSubmit={this.submit.bind(this)}>
                     <BasicInputBox valChange={this.emailChange.bind(this)}
                                     val={this.state.email}/>
