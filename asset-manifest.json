@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.895db838.css",
-  "main.css.map": "static/css/main.895db838.css.map",
-  "main.js": "static/js/main.cdce10a1.js",
-  "main.js.map": "static/js/main.cdce10a1.js.map",
+  "main.css": "static/css/main.0c2714cc.css",
+  "main.css.map": "static/css/main.0c2714cc.css.map",
+  "main.js": "static/js/main.b47c70e4.js",
+  "main.js.map": "static/js/main.b47c70e4.js.map",
   "static/media/clouds.jpg": "static/media/clouds.e74c6518.jpg",
   "static/media/glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
   "static/media/glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
@@ -10,8 +10,9 @@
   "static/media/glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
   "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2",
   "static/media/jobs-top.jpg": "static/media/jobs-top.38381a82.jpg",
+  "static/media/mobile-bg.jpg": "static/media/mobile-bg.3b5f2442.jpg",
   "static/media/podd.png": "static/media/podd.7aecfdef.png",
   "static/media/robert.jpg": "static/media/robert.24bd4bff.jpg",
-  "static/media/tpodd.png": "static/media/tpodd.907981e2.png",
-  "static/media/water.jpg": "static/media/water.b0cf28a9.jpg"
+  "static/media/skynight.png": "static/media/skynight.80758b54.png",
+  "static/media/tpodd.png": "static/media/tpodd.907981e2.png"
 }
