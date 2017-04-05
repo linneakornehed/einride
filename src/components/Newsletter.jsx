@@ -43,7 +43,7 @@ class Newsletter extends Component {
 
     renderThanks() {
         return (
-            <div key="thanks-key" className="newsletter-input news-letter-title">Thank you! We will keep you posted!</div>
+            <div key="thanks-key" className="newsletter-input news-letter-title thank-you">Thank you! We will keep you posted!</div>
         )
     }
 

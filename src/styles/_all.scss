@@ -24,6 +24,7 @@ body {
 .wrapper {
     min-height: calc(100vh - 50px);
     flex: 1;
+    margin-top: 7.75rem;
 }
 
 .start-container {
@@ -56,7 +57,7 @@ h4 {
 
 a {
     font-weight: 400;
-    color: $color-primary-2;
+    color: $color-primary-1;
     -webkit-transition: .25s ease-in;
     transition: .25s ease-in;
     cursor: pointer;
@@ -216,10 +217,7 @@ a {
 }
 
 @media only screen and (max-width: 760px) {
-    .App-header .navbar-default {
-        background-color: $color-grey-7!important;
-}
-
+    
     .navbar-nav {
         background-color: transparent;
     }
@@ -236,9 +234,9 @@ a {
         padding: 1.2rem;
     }
     .navbar-default .navbar-nav > a {
-        color: $color-grey-1!important;
+        color: $color-grey-5!important;
         &:hover {
-            color: $color-white;
+            color: $color-grey-6!important;
         }
     }
     .navbar-default .navbar-toggle .icon-bar {
@@ -246,7 +244,6 @@ a {
     }
 
     .navbar-header > svg {
-        fill: $color-white!important;
         width: 14rem;
     }
     .start-page-container {

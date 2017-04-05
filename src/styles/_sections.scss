@@ -1,6 +1,6 @@
 .grey-section {
     background-color: $color-grey-0;
-    padding: 80px 2.5% 85px;
+    padding: 60px 2.5% 65px;
 }
 
 .light-section {
@@ -10,7 +10,7 @@
 .section {
     &__small-box {
         background: $color-white;
-        height: 450px;
+        min-height: 450px;
         padding: 3.5rem;
         word-wrap: break-word;
         overflow: hidden;
@@ -21,7 +21,7 @@
         border-width: 0px;
     }
     &__main-text {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -34,7 +34,7 @@
     background: linear-gradient(
                      rgba(20,20,20, .8), 
                      rgba(20,20,20, .6)),
-    url(../images/jobs-top.jpg);
+    url(../images/rain.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,7 +46,7 @@
     background: linear-gradient(
                      rgba(20,20,20, .8), 
                      rgba(20,20,20, .6)),
-    url(../images/water.jpg);
+    url(../images/skynight.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
@@ -60,7 +60,7 @@
     background: linear-gradient(
                      rgba(20,20,20, .7), 
                      rgba(20,20,20, .5)),
-    url(../images/clouds.jpg);
+    url(../images/road.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;   
@@ -70,7 +70,7 @@
 
 .image-container--contact {
     padding: 100px 2.5% 125px;
-    background-color: $color-primary-3;
+    background-color: $color-primary-4;
     min-height: 40rem;
 }
 
@@ -80,17 +80,18 @@
 
     .main-title {
         color: $color-white;
+        font-family: 'Roboto';
+        line-height: 6rem;
         text-align: center;
-        font-size: 3.5rem;
-        margin-top: 2rem;
+        font-size: 5.5rem;
         text-transform: none;
-        font-weight: 300;
+        font-weight: 100;
         padding-bottom: 1rem;
         margin-bottom: 0;
     }
     &__text {
         color: $color-white;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         text-align: center;
         max-width: 57%;
         padding-right: 15px;
@@ -102,28 +103,38 @@
 }
 .about-page {
     &__image-box {
-        height: 445px;
+        min-height: 445px;
         background: url(../images/robert.jpg);
-        background-position: center;
+        background-position: center top;
         background-repeat: no-repeat;
         background-size: cover;  
     }
     &__image-box-2 {
-        height: 445px;
+        min-height: 445px;
         background: url(../images/podd.png);
-        background-position: center center;
+        background-position: 50% 20%;
         background-repeat: no-repeat;
         background-size: cover;     
     }
     &__text-box {
-        padding: 40px 45px 45px;
-        height: 445px;
+        padding: 40px 45px 15px;
+        min-height: 445px;
         background-color: $color-white;
     }
 }
 
+.start-page {
+    &__image-box {
+        min-height: 445px;
+        background: url(../images/tpodd.png);
+        background-position: 30% 20%;
+        background-repeat: no-repeat;
+        background-size: cover;     
+    }
+}
+
 .second-row {
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .people {
@@ -147,7 +158,7 @@
     }
     &__info-box {
         padding: 20px;
-        top: 80px;
+        bottom: 80px;
         position: absolute;
     }
 }
@@ -162,12 +173,11 @@
 }
 
 .small-box {
-    background: $color-white;
     padding: 30px;
-     min-height: 25rem;
+     min-height: 10rem;
 }
 
 .contact-title {
-    padding-bottom: 60px;
+    padding-bottom: 1rem;
     padding-top: 0px; 
 }
