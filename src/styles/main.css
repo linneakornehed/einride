@@ -440,7 +440,7 @@ h1 {
 .navbar {
   margin-bottom: 0px;
   top: 0;
-  min-height: 7.75rem;
+  min-height: 8rem;
   position: fixed;
   left: 0;
   width: 100%;
@@ -618,7 +618,7 @@ textarea:focus, input:focus {
   .news-letter-title {
     padding: 15px 1% 5px; }
   .start-page__section-4 {
-    padding: 55px 45px !important; }
+    padding: 35px 5px !important; }
   .start-page__section-2 {
     padding: 30px 5px !important; }
   .grey-section {

@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap-theme.css'
 import './styles/main.css'
 
 ReactDOM.render(  
-    <Router history={hashHistory}>
+    <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
         <Route path="/" component={App}/>
         <Route path="about" component={About}/>
         <Route path="jobs" component={Jobs}/>
