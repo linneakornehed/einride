@@ -58,7 +58,7 @@ class App extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 margin-bottom-2">
                                         <div className="start-page__image-block-1">
                 
                                         </div>
@@ -70,7 +70,7 @@ class App extends Component {
                         
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 margin-bottom-2">
                                         <div className="about-page__text-box">
                                             <h1 className="article-title">Our mission</h1>
                                             <div className="main-text">

@@ -74,7 +74,7 @@
     "start-css": "react-scripts-with-sass start",
     "build-css": "react-scripts-with-sass build",
     "test": "node scripts/test.js --env=jsdom",
-    "deploy": "npm run build&&gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [

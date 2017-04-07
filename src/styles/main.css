@@ -223,11 +223,10 @@ a {
   outline: none;
   margin-left: 0.5rem;
   border-radius: 0;
-  transition: 0.5s ease-in; }
+  transition: 0.2s ease-in; }
   .btn:hover {
     color: #ffffff;
-    background-color: #007949;
-    border: 1px solid white; }
+    background-color: #078c6d; }
   .btn:focus {
     color: #ffffff; }
 
@@ -578,12 +577,14 @@ textarea:focus, input:focus {
 @media only screen and (min-width: 768px) {
   .container {
     padding: 0;
-    width: 765px; } }
+    min-width: 765px;
+    width: auto; } }
 
 @media only screen and (min-width: 1100px) {
   .container {
     padding-right: 15px;
     padding-left: 15px;
+    min-width: 765px;
     width: auto; } }
 
 @media (min-width: 640px) {
@@ -597,6 +598,8 @@ textarea:focus, input:focus {
   .image-container {
     padding: 50px 2.5% 75px !important;
     min-height: 25rem !important; }
+  .second-row {
+    margin-top: 0 !important; }
   .image-container--contact {
     padding: 50px 2.5% 75px !important;
     min-height: 25rem !important; }

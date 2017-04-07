@@ -21,14 +21,16 @@
 @media only screen and (min-width: 768px) {
     .container {
         padding: 0;
-        width: 765px;
+        min-width: 765px;
+        width: auto;
     }
 }
 
 @media only screen and (min-width: 1100px) {
     .container {
-            padding-right: 15px;
-    padding-left: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        min-width: 765px;
         width: auto;
     }
 }
@@ -48,6 +50,10 @@
     .image-container {
         padding: 50px 2.5% 75px!important;
         min-height: 25rem!important;
+    }
+
+    .second-row {
+        margin-top: 0!important;
     }
 
     .image-container--contact {

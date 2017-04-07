@@ -63,7 +63,6 @@ class Newsletter extends Component {
         const url = window.location.protocol + '//einride.eu/____formmail/1/';
         const self = this;
         const formData = new FormData();
-        // From reverse-engineering the current homepage
         formData.append('recipient', 'news@einride.eu');
         formData.append('email', 'news@einride.eu');
         formData.append('subject', 'New message via contact form on einride.eu - Land page');

@@ -6,7 +6,7 @@ class Footer extends React.Component {
     return (
         <footer className="footer-container">
             <div className="main">
-                <div className="container col-md-10 col-md-offset-1">
+                <div className="container col-md-12">
                     <div className="col-md-12">
                         <div className="socials">
                             <a href="https://twitter.com/TeamEinride">
