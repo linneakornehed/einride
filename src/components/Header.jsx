@@ -2,6 +2,9 @@ import React from 'react';
 import {Link} from 'react-router';
 import Nav from 'react-bootstrap/lib/Nav';
 import Navbar from 'react-bootstrap/lib/Navbar';
+import NavDropdown from 'react-bootstrap/lib/NavDropdown';
+import MenuItem from 'react-bootstrap/lib/MenuItem';
+
 
 class Header extends React.Component {
 
@@ -22,10 +25,13 @@ class Header extends React.Component {
                   </Navbar.Header>
                   <Navbar.Collapse>
                     <Nav className="nav navbar-nav">
-                      <Link activeClassName='is-active' to="/about">About</Link>
+                      <NavDropdown title="About Einride" activeHref='is-active'>
+                        <Link activeClassName='is-active' className="dropdown-menu-item" to="/product">The T-pod</Link>
+                        <Link activeClassName='is-active' className="dropdown-menu-item" to="/about">Our people</Link>
+                      </NavDropdown>
                       <Link activeClassName='is-active' to="/jobs">Join our team</Link>
                       <Link activeClassName='is-active' to="/investor">Investor relations</Link>
-                      <Link activeClassName='is-active' to="/contact">Contact us</Link>
+                      <Link activeClassName='is-active' to="/contact">Press</Link>
                       <a href="http://news.einride.eu/">News</a>
                     </Nav>
                   </Navbar.Collapse>

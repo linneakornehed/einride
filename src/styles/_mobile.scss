@@ -51,7 +51,13 @@
         padding: 50px 2.5% 75px!important;
         min-height: 25rem!important;
     }
-
+    .footer-class .info, .footer-class .info-link {
+        display: block!important;
+        padding: 0.5rem 0rem;
+    }
+    .footer-class {
+        display: block;
+    }
     .second-row {
         margin-top: 0!important;
     }
@@ -69,6 +75,11 @@
     .image-container--invest {
         padding: 50px 2.5% 75px!important;
         min-height: 25rem!important;        
+    }
+
+    .image-container--product {
+        padding: 50px 2.5% 75px!important;
+        min-height: 25rem!important;             
     }
 
     .job-page__column {

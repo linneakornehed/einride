@@ -53,6 +53,17 @@
     min-height: 40rem;
 }
 
+.image-container--product {
+    padding: 100px 2.5% 125px;
+    background-color: $color-aqua;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    min-height: 40rem;
+    .main-title {
+
+    }
+}
+
 
 
 .image-container--invest {
@@ -70,7 +81,7 @@
 
 .image-container--contact {
     padding: 100px 2.5% 125px;
-    background-color: $color-primary-4;
+    background-color: $color-primary-1;
     min-height: 40rem;
 }
 

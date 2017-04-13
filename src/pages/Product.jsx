@@ -1,20 +1,9 @@
 import React from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
+import Newsletter from '../components/Newsletter.jsx';
 
 class Jobs extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {isToggleOn: false}
-        
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    handleClick() {
-        this.setState(prevState => ({
-        isToggleOn: !prevState.isToggleOn
-        }))
-    }
 
   render() {
 
@@ -24,79 +13,73 @@ class Jobs extends React.Component {
                 <Header />
                 <div className="page-section">
                     <div className="header-section">
-                        <div className="image-container--product">
+                        <div className="image-container--product ">
                         <div className="conatiner">
                             <h3 className="main-title">
-                                Product
+                                The T-pod
                             </h3>
                             <div className="header-section__text">
+“Einride is transforming the existing transport chain from the ground up. The big companies behind long haul trucks keep building bigger trucks to increase efficiency, which ultimately means even more emissions. We are changing that by creating a secure solution that is, not only cost effective, but dramatically minimizes the negative environmental impact of the transportation industry.”
+<br /><br />- Filip Lilja, COO at Einride
                             </div>
                         </div>
                     </div>
                     </div>
                 <div className="grey-section">
-                    <div className="container">
+                    <div className="container ">
                     <div className="row">
-                        <div className="col-md-6">
-                            <div className="section__video-container">
-                                <iframe src="https://player.vimeo.com/video/211160270?color=0AB68e&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
+                        <div className="col-md-4">
+                            <div className="start-page__image-box"></div>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-md-4">
                                 <div className="section__small-box">
-                                <h1 className="article-title">We are looking for people that like to make a difference</h1>
+                                <h1 className="article-title">Electric, self-driving vehicle</h1>
                                 <div className="section__main-text">
-                                    We are simplifying the concept of transportation – effectively removing vehicles, and giving the cargo wheels.
+                                        The ‘T-pod’ is an electric, self-driving vehicle that can be remotely controlled by drivers, set for prototype testing in 2017 followed by international distribution. In addition to the T-pod, we are developing a remote driving system, charging stations and an infrastructure that will make the system the most pioneering of its kind.
                                     <br />
-                                    
-                                    { this.state.isToggleOn ?
-                                        (<div>
-                                          <br />
-                                    We are rethinking the entire supply chain infrastructure from the ground up.<br /><br />
-                                            With this, we are giving the drivers a new working place, driving our T-pods remotely. This means that the driver can take a coffee break when needed, have a shorter way to work and also be able t get home to family and/or friends every day and not sleeping away from home in order to do their job. We will also create new jobs in terms of maintaining the infrastructure, and safety checking the systems as well as the T-Pod. 
-                                            Our first estimation is that we will need approximately 200 employees, which includes drivers, IT developers, production engineers and lawyers. In this way we are also creating new jobs. 
-                                        <br /><button  className="show-more-button" onClick={this.handleClick}>Read less</button>
-                                        </div>)
-                                        : <button  className="show-more-button" onClick={this.handleClick}>Read more</button>}
+                                 </div>
+                                </div>
+                            </div>
+                            <div className="col-md-4">
+                                <div className="section__small-box">
+                                <h4 className="color-aqua">Details</h4>
+                                <div className="main-text">
+                                    <div className="main-text-item">
+                                     <b>Cargo capacity:</b> 15 standard pallets
+                                    </div>
+                                    <div className="main-text-item">
+                                    <b>Weight with full cargo:</b> 20 tons
+                                    </div>
+                                    <div className="main-text-item">
+                                    <b>Length:</b> approximately 7 meters (23 feet)
+                                    </div>
+
+                                    <div className="main-text-item">
+
+                                   <b> Battery capacity:</b> 200 kWh energy
+                                                                        </div>
+
+                                    <div className="main-text-item">
+
+                                   <b> Distance on one charge:</b> 200km (124 miles)
+                                                                        </div>
+
                                 </div>
                                 </div>
                             </div>
                     </div>
+                             <div className="second-row row margin-top-2-5">
+                                <div className="col-md-12">
+                                    <div className="about-page__image-box-2"></div>
+                                </div>
+                                 </div>
                 </div>
                 </div>
-                <div className="light-section">
-                <div className="container">
-        
-                    <div className="row">
-                            <h3 className="main-title">
-                                Join our team
-                            </h3>
-                        <div className="main-text col-md-4 job-page__column">
-                            <h4 className="job-page__title">CFO</h4>
-                            <p> We are looking for a CFO to join the founding team. You will be responsible, together with the CEO, of securing long time financing and building the company's success.
-                                <br />
-                                <br />
-                                Email: <a>jobs@einride.eu</a>
-                            </p>
-                        </div>
-                        <div className="main-text col-md-4 job-page__column">
-                            <h4 className="job-page__title">CIO</h4>
-                            <p>We are looking for a CIO to join the founding team. You will build and design our operating systems and integrate the solution towards our customers.
-                                <br />
-                                <br />
-                                Email: <a>jobs@einride.eu</a>
-                            </p>
-                        </div>
-                        <div className="main-text col-md-4 job-page__column">
-                            <h4 className="job-page__title">Creative minds</h4>
-                            <p>Einride is built on the belief that we can build a better tomorrow. If you are a person that would like to help us do that, we are waiting for your application.  
-                                <br /><br />
-                                No matter your talent, if you have the passion, you can probably contribute.</p>
-                        </div>
-                    </div>
-                </div>
-                </div>
+               
+
             </div>
+                        <Newsletter />
+
             </div>
             <Footer />
         </div>

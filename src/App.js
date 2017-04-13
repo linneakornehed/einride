@@ -64,7 +64,7 @@ class App extends Component {
                                         </div>
                                     </div>
                                 </div>  
-<div className="row second-row">
+                                <div className="row second-row">
                                     <div className="col-md-6 margin-bottom-2 hidden-mobile">
                                         <div className="start-page__image-block-2">
                         
@@ -94,11 +94,8 @@ class App extends Component {
                                             We believe that with innovation, technology and commitment, no problem can’t be solved. No mountain is insurmountable.                                            </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-4 margin-bottom-2 hidden-mobile">
+                                    <div className="col-md-8 margin-bottom-2 hidden-mobile">
                                         <div className="about-page__image-box-2"></div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="start-page__image-box"></div>
                                     </div>
                                 </div>  
                           </div>

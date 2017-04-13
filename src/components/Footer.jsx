@@ -1,11 +1,12 @@
 import React from 'react'
+import {Link} from 'react-router'
 
 class Footer extends React.Component {
 
   render() {
     return (
         <footer className="footer-container">
-            <div className="main">
+            <div className="main content-wrapper">
                 <div className="container col-md-12">
                     <div className="col-md-12">
                         <div className="socials">
@@ -33,10 +34,21 @@ class Footer extends React.Component {
                     </div>
                     <div className="col-md-12">
                         <div className="footer-class">
-                            <div className="footer-heading">Einride AB </div>
-                            <div className="info">Holtermansgatan 1D </div>
-                            <div className="info">411 29 Göteborg </div>
-                            <div className="info">Sweden </div>
+                            <div className="info info-link">
+                                <Link to="/contact">Contact us</Link>
+                            </div>
+                            <div className="info info-link">
+                                <Link to="/jobs">Join our team</Link>
+                            </div>
+                            <div className="info info-link">
+                                <Link to="/investor">Investor relations</Link>
+                            </div>
+                            <div className="info info-link">
+                                <Link to="/press">Press</Link>
+                            </div>
+                            <div className="info info-link">
+                                <Link to="/">Einride News</Link>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -17,10 +17,11 @@ class About extends React.Component {
                         <div className="image-container--about">
                         <div className="conatiner">
                             <h3 className="main-title">
-                                About Einride
+                                Who we are
                             </h3>
                             <div className="header-section__text">
-                            "A simpler, carbon dioxide free supply chain. A better life for all." - Christer Fuglesang
+                            "A simpler, carbon dioxide free supply chain. A better life for all." 
+                            <br /><br />- Christer Fuglesang
                             </div>
                         </div>
                     </div>
@@ -30,7 +31,7 @@ class About extends React.Component {
                <div className="row second-row">
                     <div className="col-md-7 margin-bottom-2">
                         <div className="about-page__text-box">
-                        <h1 className="article-title">Who we are</h1>
+                        <h1 className="article-title">Our people</h1>
                             <div className="main-text">
                                 This is not a company, it’s a movement. We don’t just work here, we believe. We are an organisation that judges our success by the positive impact our solutions have on the lives of others.
                                 <br />

@@ -48,6 +48,7 @@ h1 {
     }
     .navbar-default .navbar-nav > a {
         color: $color-grey-6;
+        border: 1px solid transparent;
         &:hover {
             color: $color-grey-4;
         }
@@ -56,11 +57,15 @@ h1 {
     .navbar-header > svg {
         fill: $color-black;
     }
+.navbar-nav > li > a {
+      border: 1px solid transparent;
+}
 
 
 .navbar {
       margin-bottom: 0px;
       top: 0;
+      border-radius: 0;
       min-height: 8rem;
       position: fixed;
       left:0;

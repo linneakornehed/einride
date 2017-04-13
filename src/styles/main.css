@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext");
+.color-aqua {
+  color: #6fc8cb;
+  font-size: 1.4rem;
+  font-weight: 600; }
+
+.color-grey {
+  background-color: #4c4c4c;
+  color: white; }
+
 html {
   height: 100%; }
 
@@ -95,6 +104,19 @@ a {
   font-size: 1.6rem;
   font-weight: 400; }
 
+.navbar-nav > li {
+  margin-top: -3.0rem; }
+
+.caret {
+  color: #a9a9a9; }
+
+.navbar-nav > li > a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 600;
+  color: #4c4c4c !important;
+  font-size: 1.6rem !important; }
+
 .navbar-default {
   background: transparent;
   border: none; }
@@ -115,6 +137,9 @@ a {
   .navbar-default .navbar-nav > a:hover {
     color: #ffffff; }
 
+.navbar-nav > li > .dropdown-menu {
+  margin-top: -0.2rem; }
+
 .navbar-default .navbar-nav > a.is-active {
   background-color: #f1f1f1; }
 
@@ -134,6 +159,35 @@ a {
 .navbar-brand {
   padding: 1.5rem 0;
   line-height: 45px; }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #ffffff !important;
+  border: 1px solid #e6e6e6;
+  border-bottom: 1px solid #ffffff;
+  background-image: none;
+  box-shadow: none;
+  z-index: 2; }
+
+.dropdown-menu {
+  padding: 25px;
+  width: 362px;
+  z-index: 1;
+  margin-top: -0.75rem;
+  box-shadow: none; }
+
+.open > .dropdown-menu {
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  outline: none; }
+
+.dropdown-menu-item {
+  display: block;
+  padding: 15px 0px !important; }
+
+a.dropdown-menu-item {
+  color: #121212;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 1.6rem; }
 
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 5px; }
@@ -203,6 +257,14 @@ a {
   .react-count-down {
     font-size: 2.2rem; } }
 
+.dropdown-menu-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 600; }
+
+.margin-top-2-5 {
+  margin-top: 2.5rem !important; }
+
 .sm-btn {
   background-color: #0AB68E;
   color: #ffffff;
@@ -248,6 +310,15 @@ a {
   .show-more-button:focus {
     outline: none; }
 
+.color-aqua {
+  color: #6fc8cb;
+  font-size: 1.4rem;
+  font-weight: 600; }
+
+.color-grey {
+  background-color: #4c4c4c;
+  color: white; }
+
 .footer-container {
   box-shadow: inset 1px 1px 3px 1px rgba(0, 0, 0, 0.06);
   background: #f1f1f1;
@@ -258,15 +329,51 @@ a {
   margin-top: 2rem; }
 
 .footer-class {
-  display: block;
+  padding: 45px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  text-align: center;
-  padding: 45px 0; }
+  padding: 4.5rem 0rem;
+  margin-bottom: 2rem;
+  justify-content: center; }
   .footer-class .footer-heading {
     padding: 0.5rem; }
   .footer-class .info, .footer-class .info-link {
-    padding: 0.5rem;
+    padding: 1rem 2rem;
     display: block; }
+
+.info a {
+  color: #757575; }
+
+.info-text {
+  padding: 1rem 2rem; }
+
+.info-link {
+  display: inline-block !important;
+  justify-content: center; }
+
+.border {
+  border-bottom: 1px solid #a9a9a9; }
+
+.footer-class-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0rem 0rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+  font-size: 1.4rem;
+  color: #4c4c4c; }
 
 #root {
   display: flex;
@@ -381,6 +488,9 @@ a {
     margin-right: auto;
     margin-left: auto; }
 
+.main-text-item {
+  padding: 0.5rem 0; }
+
 .start-container {
   height: 100%;
   width: 100%;
@@ -429,16 +539,21 @@ h1 {
   box-shadow: none; }
 
 .navbar-default .navbar-nav > a {
-  color: #4c4c4c; }
+  color: #4c4c4c;
+  border: 1px solid transparent; }
   .navbar-default .navbar-nav > a:hover {
     color: #525252; }
 
 .navbar-header > svg {
   fill: #121212; }
 
+.navbar-nav > li > a {
+  border: 1px solid transparent; }
+
 .navbar {
   margin-bottom: 0px;
   top: 0;
+  border-radius: 0;
   min-height: 8rem;
   position: fixed;
   left: 0;
@@ -531,7 +646,7 @@ textarea:focus, input:focus {
 .socials {
   display: flex;
   justify-content: center;
-  padding: 4.5rem 0rem;
+  padding: 2.5rem 0rem;
   border-bottom: 1px solid #a9a9a9; }
   .socials a {
     padding: 1rem 1.5rem; }
@@ -598,6 +713,11 @@ textarea:focus, input:focus {
   .image-container {
     padding: 50px 2.5% 75px !important;
     min-height: 25rem !important; }
+  .footer-class .info, .footer-class .info-link {
+    display: block !important;
+    padding: 0.5rem 0rem; }
+  .footer-class {
+    display: block; }
   .second-row {
     margin-top: 0 !important; }
   .image-container--contact {
@@ -607,6 +727,9 @@ textarea:focus, input:focus {
     padding: 50px 2.5% 75px !important;
     min-height: 25rem !important; }
   .image-container--invest {
+    padding: 50px 2.5% 75px !important;
+    min-height: 25rem !important; }
+  .image-container--product {
     padding: 50px 2.5% 75px !important;
     min-height: 25rem !important; }
   .job-page__column {
@@ -693,6 +816,13 @@ textarea:focus, input:focus {
   background-size: cover;
   min-height: 40rem; }
 
+.image-container--product {
+  padding: 100px 2.5% 125px;
+  background-color: #6fc8cb;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 40rem; }
+
 .image-container--invest {
   padding: 100px 2.5% 125px;
   background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.5)), url(../images/road.png);
@@ -703,7 +833,7 @@ textarea:focus, input:focus {
 
 .image-container--contact {
   padding: 100px 2.5% 125px;
-  background-color: #205440;
+  background-color: #0AB68E;
   min-height: 40rem; }
 
 .header-section .main-title {
@@ -828,7 +958,7 @@ textarea:focus, input:focus {
 
 .green-bg {
   display: flex;
-  background-color: #007949; }
+  background-color: #0AB68E; }
 
 .quote-icon-container {
   width: 5rem;

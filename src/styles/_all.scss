@@ -118,6 +118,22 @@ a {
     font-weight: 400;
 }
 
+.navbar-nav > li {
+    margin-top: -3.0rem;
+}
+
+.caret {
+    color: $color-grey-3;
+}
+
+.navbar-nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    color: #4c4c4c!important;
+    font-size: 1.6rem !important;
+}
+
 .navbar-default {
     background: transparent;
     border: none;
@@ -144,6 +160,9 @@ a {
     } 
   }
 
+.navbar-nav > li > .dropdown-menu {
+        margin-top: -0.2rem;
+}
 
 .navbar-default .navbar-nav > a.is-active {
     background-color: $color-grey-0;
@@ -170,6 +189,39 @@ a {
     line-height: 45px;
 }
 
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: $color-white!important;
+    border: 1px solid $color-grey-2;
+    border-bottom: 1px solid $color-white;
+    background-image: none;
+    box-shadow: none;
+    z-index: 2;
+}
+
+.dropdown-menu {
+    padding: 25px;
+    width: 362px;
+    z-index: 1;
+    margin-top: -0.75rem;
+    box-shadow: none;
+}
+
+.open > .dropdown-menu {
+    border: 1px solid $color-grey-2;
+    border-radius: 1px;
+    outline: none;
+}
+
+.dropdown-menu-item {
+    display: block;
+    padding: 15px 0px!important;
+}
+
+a.dropdown-menu-item {
+    color: $color-black;
+    border-bottom: 1px solid $color-grey-2;
+    font-size: 1.6rem;
+}
 
 .navbar-toggle .icon-bar + .icon-bar {
     margin-top: 5px;
@@ -263,4 +315,14 @@ a {
     .react-count-down {
         font-size: 2.2rem;
     }
+}
+
+.dropdown-menu-item {
+        padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+
+.margin-top-2-5 {
+    margin-top: 2.5rem!important;
 }
