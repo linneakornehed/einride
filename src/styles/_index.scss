@@ -31,10 +31,10 @@ h1 {
   margin-bottom: 0;
   list-style: none;
   position: relative;
+  background-color: $color-white;
   display: block; }
 
 .navbar-nav {
-  margin-top: 2.8rem;
   float: right;
   font-size: 1.4rem;
   font-weight: 600;    
@@ -68,10 +68,8 @@ h1 {
       border-radius: 0;
       min-height: 8rem;
       position: fixed;
-      left:0;
       width: 100%;
       background-color: $color-white;
-      border-bottom: rgba(255,255,255,.8) 1px solid;
       box-shadow: 0 3px 0 rgba(0,0,0,.05);
 }
 
@@ -83,6 +81,10 @@ h1 {
   background: transparent;
   text-decoration: none;
   color: #323232; }
+
+  .navbar-default .navbar-nav>.open>a {
+    transition: none;
+  }
 
 .navbar-default .navbar-toggle {
   border-color: transparent; }
@@ -127,7 +129,7 @@ h1 {
       min-height: 5rem;
     }
     .start-page__section-1--text {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
     .start-page__section-1 {
         padding: 35px 2.5% 35px;

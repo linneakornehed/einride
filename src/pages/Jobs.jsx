@@ -26,11 +26,11 @@ class Jobs extends React.Component {
                     <div className="header-section">
                         <div className="image-container">
                         <div className="conatiner">
-                            <h3 className="main-title">
+                            <h1 className="main-title">
                                 Join our team
-                            </h3>
+                            </h1>
                             <div className="header-section__text">
-                            We are rebuilding the definition of driving jobs – eradicating unsociable hours and establishing a new, happier environment for work. Jobs are about wellbeing, and life balance, not just employment.
+                            We are rethinking the entire transport infrastructure from the ground up. With this, we are giving the drivers a new working place, driving our T-pods remotely. This means that the driver can take a coffee break when needed, have a shorter way to work and also be able *to* get home to family and/or friends every day and not sleeping away from home in order to do their job.
                             </div>
                         </div>
                     </div>
@@ -39,12 +39,12 @@ class Jobs extends React.Component {
                     <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <div className="section__video-container">
-                                <iframe src="https://player.vimeo.com/video/211160270?color=0AB68e&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <div className="section__video-container margin-bottom-2">
+                                <iframe src="https://player.vimeo.com/video/211160270?color=0AB68e&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                         </div>
                             </div>
                             <div className="col-md-6">
-                                <div className="section__small-box">
+                                <div className="section__small-box margin-bottom-2">
                                 <h1 className="article-title">We are looking for people that like to make a difference</h1>
                                 <div className="section__main-text">
                                     We are simplifying the concept of transportation – effectively removing vehicles, and giving the cargo wheels.

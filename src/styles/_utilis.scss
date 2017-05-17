@@ -18,13 +18,13 @@
     color: $color-white;
     word-break: no-break;
     bottom: 0;
-    font-family: 'Roboto';
+    font-family: 'Dosis', 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 200;
 }
 
 .green-bg {
     display: flex;
-    background-color: $color-primary-1;
+    background-color: $color-primary;
 }
 
 .quote-icon-container {
@@ -34,4 +34,73 @@
 
 .quote-icon {
     width: 100%;
+}
+
+.blue-box {
+    background-color: $color-grey-blue;
+    h4 {
+        color: $color-white;
+    }
+    .main-text {
+        color: $color-white;
+    }
+}
+
+.no-bg {
+    padding: 0px;
+    text-align: center;
+}
+
+.press-page__text-box {
+    padding: 3rem;
+    background-color: $color-white;
+    min-height: 30rem;
+}
+
+.press-date {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.press-url {
+    .fa-long-arrow-right {
+        padding: 0.5rem;
+    }
+}
+
+.press-image {
+    height: 24rem;
+    line-height: 22rem;
+    img {
+        height: auto;
+        max-width: 22rem;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.press-main-text {
+    padding: 1rem 0;
+    color: $color-grey-5;
+}
+
+.center {
+    text-align: center;
+}
+
+.learn-more-button {
+    border-bottom: none;
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.learn-more {
+    border-bottom: none!important;
+    padding-bottom: 1rem!important;
 }

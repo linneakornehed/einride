@@ -25,14 +25,15 @@ class Header extends React.Component {
                   </Navbar.Header>
                   <Navbar.Collapse>
                     <Nav className="nav navbar-nav">
-                      <NavDropdown title="About Einride" activeHref='is-active'>
+                      <NavDropdown title="About Einride" activeHref='is-active' id="dropdown">
                         <Link activeClassName='is-active' className="dropdown-menu-item" to="/product">The T-pod</Link>
-                        <Link activeClassName='is-active' className="dropdown-menu-item" to="/about">Our people</Link>
+                        <Link activeClassName='is-active' className="dropdown-menu-item" to="/about">The team</Link>
+                        <Link activeClassName='is-active' className="dropdown-menu-item" to="/pressrelease">Press release</Link>
                       </NavDropdown>
                       <Link activeClassName='is-active' to="/jobs">Join our team</Link>
                       <Link activeClassName='is-active' to="/investor">Investor relations</Link>
-                      <Link activeClassName='is-active' to="/contact">Press</Link>
-                      <a href="http://news.einride.eu/">News</a>
+                      <Link activeClassName='is-active' to="/press">Press</Link>
+                      <a href="http://news.einride.eu/">Blog</a>
                     </Nav>
                   </Navbar.Collapse>
                 </Navbar>

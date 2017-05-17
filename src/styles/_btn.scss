@@ -10,18 +10,17 @@
 }
 
 .btn {
-    background-color: $color-primary-1;
+    background-color: $color-primary;
     color: $color-white;
     text-transform: uppercase;
     font-weight: 700;    color: $color-white;
     padding: 2rem 2rem;
     outline: none;
-    margin-left: 0.5rem;
     border-radius: 0;
     transition: 0.2s ease-in;
     &:hover {
         color: $color-white;
-        background-color: #078c6d;
+        background-color: #2e8a54;
     }
     &:focus {
         color: $color-white;
@@ -40,10 +39,10 @@
     font-weight: 600;
     user-select: none;
     margin-top: 2rem;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     &:focus {
         outline: none;
     }

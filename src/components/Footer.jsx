@@ -47,8 +47,13 @@ class Footer extends React.Component {
                                 <Link to="/press">Press</Link>
                             </div>
                             <div className="info info-link">
-                                <Link to="/">Einride News</Link>
+                                <a href="http://news.einride.eu/">Einride blog</a>
                             </div>
+                        </div>
+                    </div>
+                    <div className="col-md-12">
+                         <div className="footer-class-2">
+                             <div className="info info-link">© 2017 Einride. All rights reserved.</div>
                         </div>
                     </div>
                 </div>

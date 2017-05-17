@@ -8,7 +8,7 @@ class Video extends Component {
                         width="100%" 
                         height="100%" 
                         frameborder="0" 
-                        webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                        webkitAllowFullScreen mozallowfullscreen allowFullScreen>
                 </iframe>
             </div>
         )

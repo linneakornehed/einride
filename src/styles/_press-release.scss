@@ -1,0 +1,27 @@
+.press-release {
+    padding: 4rem;
+    padding-bottom: 0rem;
+
+    &__title {
+        color: $color-grey-6!important;
+        padding: 4rem;
+
+    }
+    &__press-title {
+        font-size: 4rem;
+    }
+    &__regular {
+        margin: 2.5rem 0;
+        line-height: 3rem;
+    }
+    &__italic {
+        font-style: italic;
+    }
+
+    &__date {
+        font-size: 1.8rem;
+        text-align: center;
+        color: $color-grey-3;
+    }
+
+}

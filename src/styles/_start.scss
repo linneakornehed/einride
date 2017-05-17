@@ -1,0 +1,36 @@
+.start {
+
+    &__intro {
+        max-width: 100%;
+        padding: 10%;
+        background: url('../images/podd.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 60rem;
+    }
+    &__text-box {
+        max-width: 450px;
+        text-align: left;
+    }
+    &__header-title {
+        font-family: 'Dosis', 'Roboto', Arial, Helvetica, sans-serif;
+        color: $color-white;
+        font-weight: 300;
+        font-size: 6rem;
+    }
+    &__main-text {
+        color: $color-white;
+        padding: 2% 0;
+        margin-bottom: 2rem;
+    }
+    &__button {
+        background: $color-primary;
+        color: $color-white;
+        font-weight: 600;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        &:hover {
+            color: $color-white!important;
+        }
+    }
+}

@@ -93,7 +93,8 @@ a {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    position: relative;
+    position: absolute;
+    background-color: $color-white;
     display: block;
 }
 
@@ -108,7 +109,7 @@ a {
 .navbar-nav>a {
     padding-top: 30px;
     padding-bottom: 30px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .navbar-nav {
@@ -120,6 +121,8 @@ a {
 
 .navbar-nav > li {
     margin-top: -3.0rem;
+    float: none;
+    display: inline-block;
 }
 
 .caret {
@@ -129,7 +132,7 @@ a {
 .navbar-nav > li > a {
     padding-top: 30px;
     padding-bottom: 30px;
-    font-weight: 600;
+    font-weight: 400;
     color: #4c4c4c!important;
     font-size: 1.6rem !important;
 }
@@ -199,7 +202,6 @@ a {
 }
 
 .dropdown-menu {
-    padding: 25px;
     width: 362px;
     z-index: 1;
     margin-top: -0.75rem;
@@ -214,13 +216,16 @@ a {
 
 .dropdown-menu-item {
     display: block;
-    padding: 15px 0px!important;
+    padding: 15px 15px!important;
 }
 
 a.dropdown-menu-item {
     color: $color-black;
     border-bottom: 1px solid $color-grey-2;
     font-size: 1.6rem;
+    &:last-child {
+        border-bottom: none;
+    }
 }
 
 .navbar-toggle .icon-bar + .icon-bar {
@@ -286,7 +291,7 @@ a.dropdown-menu-item {
         padding: 1.2rem;
     }
     .navbar-default .navbar-nav > a {
-        color: $color-grey-5!important;
+
         &:hover {
             color: $color-grey-6!important;
         }
@@ -318,9 +323,9 @@ a.dropdown-menu-item {
 }
 
 .dropdown-menu-item {
-        padding-top: 30px;
+    padding-top: 30px;
     padding-bottom: 30px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .margin-top-2-5 {

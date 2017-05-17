@@ -3,7 +3,7 @@ import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Newsletter from './components/Newsletter.jsx'
 import Video from './components/Video.jsx'
-
+import {Link} from 'react-router'
 
 class App extends Component {   
     constructor(props) {
@@ -12,7 +12,7 @@ class App extends Component {
         
         this.handleClick = this.handleClick.bind(this);
     }
-
+    
     handleClick() {
         this.setState(prevState => ({
         isToggleOn: !prevState.isToggleOn
@@ -26,31 +26,26 @@ class App extends Component {
             <div className="App-header">
                 <Header />
                     <div className="start-page">
-                            <div className="start-page__video">
-                                <Video />
-                            </div>
-                            <div className="start-page__conatiner">
-                                <div className="start-page__section-1">
-                                    <div className="start-page__section-1--text content-wrapper">
-                                        This is not a company, it’s a movement. Einride is installing the world’s first completely emission-free, road-based transportation system. We are rethinking the entire supply-chain infrastructure from the ground up, creating the transport solution of the future.
-                                        { 
-                                            this.state.isToggleOn ?
-                                            ( <div><br />Einride transforms the impact of the supply chain industry – removing dirty, polluting, inefficient vehicles from the entire system. Noise is reduced, congestion is relieved, and road safety is improved. <br /><br />We are also transforming the economy of change. Traditionally, costs have gone up as planetary impact goes down – but with Einride there is no sustainability premium, rather it’s a sustainability advantage.
-                                            <br /><br />
-                                            <button className="show-more-button" onClick={this.handleClick}>Read less</button> 
-                                            </div> )
-                                       :    (<div><br /><button className="show-more-button" onClick={this.handleClick}>Read more</button></div>) }
-                                       <br />
-                                    </div>
+                        <div className="start__intro">
+                            <div className="start__text-box">
+                                <h1 className="start__header-title">
+                                    This isn’t just a company. It’s a movement.
+                                </h1>
+                                <div className="start__main-text">
+                                Einride is installing the world’s first completely emission-free, road-based transportation system. We are rethinking the entire transport infrastructure from the ground up, creating the transport solution of the future.
                                 </div>
+                                <Link to="/pressrelease" className="start__button">Learn more</Link>
                             </div>
+                            
+                        </div>
                             <div className="container grey-section">
                                 <div className="row">
                                     <div className="col-md-6 margin-bottom-2">
                                         <div className="about-page__text-box">
                                             <h1 className="article-title">Our vision</h1>
                                             <div className="main-text">
-                                                Our vision is to enhance the lives of a billion people through the delivery of a global, impact-positive supply chain infrastructure.
+                                                
+                                                Our vision is to enhance the lives of a billion people through the delivery of a global, impact-positive transport infrastructure.
                                                 <br /><br />
                                                 That means we don’t believe our work is done when we’re carbon neutral. Our design process is driven by aiming to have a net positive impact – whether that might be improving the lives of transport workers, or reducing road traffic accidents, every element of our system aims to have a measurable positive impact on the planet.
                                                 <br /><br />
@@ -63,7 +58,7 @@ class App extends Component {
                 
                                         </div>
                                     </div>
-                                </div>  
+                                </div> 
                                 <div className="row second-row">
                                     <div className="col-md-6 margin-bottom-2 hidden-mobile">
                                         <div className="start-page__image-block-2">
@@ -97,7 +92,10 @@ class App extends Component {
                                     <div className="col-md-8 margin-bottom-2 hidden-mobile">
                                         <div className="about-page__image-box-2"></div>
                                     </div>
-                                </div>  
+                                </div> 
+                            <div className="start-page__video">
+                                <Video />
+                            </div>
                           </div>
                             <div className="start-page__section-2">
                                 <h4 className="section-title"></h4>
@@ -118,8 +116,7 @@ class App extends Component {
                                         <img className="start-page__icon start-page__icon--wheel" src="./images/wheel-icon-2.svg" />
                                         <div className="start-page__column--title">Self- and remote drive</div>
                                      <div className="start-page__column--text">
-                                        Self-drive technology. Driver centres for remote driving.
-                                        We will improve industry standards for the workers and create new kind of jobs
+                                        Self-drive technology. Driver centres for remote driving. We will improve industry standards for the workers and create new kinds of jobs
                                     </div>
                                     </div>
                                 </div>

@@ -59,11 +59,16 @@
     background-repeat: no-repeat;
     background-size: cover;   
     min-height: 40rem;
-    .main-title {
 
-    }
 }
 
+.image-container--press {
+    padding: 100px 2.5% 125px;
+    background-color: $color-grey-blue;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    min-height: 40rem;
+}
 
 
 .image-container--invest {
@@ -81,7 +86,7 @@
 
 .image-container--contact {
     padding: 100px 2.5% 125px;
-    background-color: $color-primary-1;
+    background-color: $color-primary;
     min-height: 40rem;
 }
 
@@ -91,7 +96,7 @@
 
     .main-title {
         color: $color-white;
-        font-family: 'Roboto';
+        font-family: 'Dosis', 'Roboto', Arial, Helvetica, sans-serif;
         line-height: 6rem;
         text-align: center;
         font-size: 5.5rem;
@@ -175,11 +180,11 @@
 }
 
 .content-wrapper {
-    max-width: 786px;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+    max-width: 986px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 

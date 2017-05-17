@@ -3,7 +3,7 @@ import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import Newsletter from '../components/Newsletter.jsx';
 
-class About extends React.Component {
+class Vision extends React.Component {
 
   render() {
     return (
@@ -65,4 +65,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default Vision;
