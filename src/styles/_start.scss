@@ -1,26 +1,39 @@
 .start {
 
+    &__link {
+        color: $color-white;
+        .fa-long-arrow-right {
+            margin-top: 2px;
+        }
+    }
+
+    &__link-text {
+        margin: 1px;
+        display: inline;
+    }
+
     &__intro {
         max-width: 100%;
-        padding: 10%;
-        background: url('../images/podd.png');
+        padding: 2.5% 15%;
+        background: url('../images/Tpod_Material5.jpg');
         background-size: cover;
+        background-position: center center;
         background-repeat: no-repeat;
-        min-height: 60rem;
+        min-height: 47rem;
     }
     &__text-box {
-        max-width: 450px;
-        text-align: left;
+        text-align: center;
     }
     &__header-title {
-        font-family: 'Dosis', 'Roboto', Arial, Helvetica, sans-serif;
-        color: $color-white;
+        font-family: 'Karla', 'Roboto', Arial, Helvetica, sans-serif;
+        color: $color-black;
         font-weight: 300;
-        font-size: 6rem;
+        font-size: 3.5rem;
+        line-height: 4.75rem;
     }
     &__main-text {
         color: $color-white;
-        padding: 2% 0;
+        font-size: 1.6rem;
         margin-bottom: 2rem;
     }
     &__button {

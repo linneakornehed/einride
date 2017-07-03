@@ -18,7 +18,7 @@ class Press extends React.Component {
                                 <div className="image-container--press">
                                 <div className="conatiner">
                                     <h1 className="main-title">
-                                        Press
+                                    Press
                                     </h1>
                                     <div className="header-section__text">
                                        For any media inquiries, please reach out to press@einride.eu. 
@@ -28,17 +28,14 @@ class Press extends React.Component {
                             </div>
                         <div className="grey-section">
                         <div className="container">
-                            <div className="row col-md-10 col-md-offset-1 margin-bottom-2"> 
-                                <h1 className="article-title center">News</h1>
-                            </div>
                             <div className="row margin-bottom-2">
-                                <div className="col-md-10 col-md-offset-1 margin-bottom-2 press-page__text-box">
-                                    <div className="press-image col-md-4">
+                                <div className="col-md-4 press-page__text-box">
+                                    <div className="press-image col-md-12">
                                         <a href="https://techcrunch.com/2017/04/06/einrides-electric-self-driving-t-pod-is-a-new-kind-of-freight-transport-vehicle/" alt="Tech Crunch">
                                             <img src="../images/techcrunch-logo.png" className="tech-image"/>
                                         </a>
                                     </div>
-                                    <div className="col-md-8">
+                                    <div className="col-md-12">
                                         <h1 className="article-title">Einride’s electric self-driving T-pod is a new kind of freight transport vehicle</h1>
                                         <div className="press-date">Tech Crunch, 6 April 2017</div>
                                         <div className="press-main-text">
@@ -48,15 +45,13 @@ class Press extends React.Component {
                                         </div>
                                     </div>
                                     </div>
-                                </div> 
-                            <div className="row margin-bottom-2">
-                                <div className="col-md-10 col-md-offset-1 margin-bottom-2 press-page__text-box">
-                                    <div className="press-image col-md-4">
+                                <div className="col-md-4 press-page__text-box">
+                                    <div className="press-image col-md-12">
                                         <a href="https://www.washingtonpost.com/news/on-small-business/wp/2017/04/14/will-driverless-trucks-pass-these-guys-by/?tid=ss_fb-bottom&utm_term=.669673c66cbb" alt="The Washington Post">
                                             <img src="../images/washington_post_logo.png" />
                                         </a>
                                     </div>
-                                    <div className="col-md-8">
+                                    <div className="col-md-12">
                                         <h1 className="article-title">Will driverless trucks pass these guys by</h1>
                                         <div className="press-date">The Washington Post, 14 April 2017</div>
                                         <div className="press-main-text">
@@ -66,15 +61,13 @@ class Press extends React.Component {
                                     </div>
                                     </div>
                                 </div>
-                            </div> 
-                            <div className="row margin-bottom-2">
-                                <div className="col-md-10 col-md-offset-1 margin-bottom-2 press-page__text-box">
-                                        <div className="press-image col-md-4">
+                                <div className="col-md-4 press-page__text-box">
+                                        <div className="press-image col-md-12">
                                             <a href="https://www.fastcompany.com/40405140/this-autonomous-driverless-electric-pod-is-the-delivery-guy-of-the-future?partner=rss&utm_campaign=rss+fastcompany&utm_content=rss&utm_medium=feed&utm_source=rss" alt="Fast Company">
                                                 <img src="../images/fast-company.svg" />
                                             </a>
                                         </div>
-                                            <div className="col-md-8">
+                                            <div className="col-md-12">
                                             <h1 className="article-title">This Driverless Electric Pod Is The Delivery Guy Of The Future</h1>
                                             <div className="press-date">Fast Company, 13 April 2017</div>
                                             <div className="press-main-text">
@@ -84,15 +77,15 @@ class Press extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                            </div>
+                            </div> 
                             <div className="row margin-bottom-2">
-                                <div className="col-md-10 col-md-offset-1 margin-bottom-2 press-page__text-box">
-                                    <div className="press-image col-md-4">
+                                <div className="col-md-4 press-page__text-box">
+                                    <div className="press-image col-md-12">
                                         <a href="https://venturebeat.com/2017/04/07/meet-t-pod-an-autonomous-electric-truck-that-can-also-be-controlled-remotely/" alt="Venture Beat">
                                             <img src="../images/venturebeat-logo.png" />
                                         </a>
                                     </div>
-                                    <div className="col-md-8">
+                                    <div className="col-md-12">
                                         <h1 className="article-title">Meet T-pod, an autonomous electric truck that can also be controlled remotely</h1>
                                         <div className="press-date">Venture Beat, 7 April 2017</div>
                                         <div className="press-main-text">
@@ -103,15 +96,13 @@ class Press extends React.Component {
                                         </div>
                                     </div>
                                     </div>
-                                </div>
-                            <div className="row margin-bottom-2">
-                                <div className="col-md-10 col-md-offset-1 margin-bottom-2 press-page__text-box">
-                                    <div className="press-image col-md-4">
+                                <div className="col-md-4 press-page__text-box">
+                                    <div className="press-image col-md-12">
                                         <a href="http://mashable.com/2017/04/06/einride-sustainable-autonomous-trucking/#v6C7aQysFkqx" alt="Mashable">
                                             <img src="../images/mashable.png" />
                                         </a>
                                     </div>
-                                    <div className="col-md-8">
+                                    <div className="<col-md-12> </col-md-12>">
                                         <h1 className="article-title">New self-driving electric trucking startup thinks it can replace semis</h1>
                                         <div className="press-date">Mashable, 6 April 2017</div>
                                         <div className="press-main-text">
@@ -123,15 +114,13 @@ class Press extends React.Component {
                                         </div>
                                     </div>
                                     </div>
-                                </div> 
-                            <div className="row margin-bottom-2">
-                                <div className="col-md-10 col-md-offset-1 margin-bottom-2 press-page__text-box">
-                                        <div className="press-image col-md-4">
+                                <div className="col-md-4 press-page__text-box">
+                                        <div className="press-image col-md-12">
                                             <a href="http://www.dailymail.co.uk/sciencetech/article-4409650/Watch-truck-drivers-robot-coming-jobs.html?ito=social-twitter_mailonline#ixzz4e9LWjeup" alt="Daily mail">
                                                 <img src="../images/daily-mail-logo.png" />
                                             </a>
                                         </div>
-                                            <div className="col-md-8">
+                                            <div className="col-md-12">
                                             <h1 className="article-title">Watch out truck drivers</h1>
                                             <div className="press-date">Daily Mail, 13 April 2017</div>
                                             <div className="press-main-text">
@@ -144,13 +133,13 @@ class Press extends React.Component {
                                     </div>
                             </div> 
                             <div className="row margin-bottom-2">
-                                <div className="col-md-10 col-md-offset-1 margin-bottom-2 press-page__text-box">
-                                    <div className="press-image col-md-4">
+                                <div className="col-md-4 press-page__text-box">
+                                    <div className="press-image col-md-12">
                                             <a href="http://www.nyteknik.se/fordon/nya-svenska-ellastbilen-rattar-sig-sjalv-6841457" alt="Ny teknik">
                                         <img src="../images/ny-teknik-logo-white.svg" />
                                         </a>
                                     </div>
-                                    <div className="col-md-8">
+                                    <div className="col-md-12">
                                         <h1 className="article-title">Nya svenska ellastbilen rattar sig själv</h1>
                                         <div className="press-date">Ny Teknik, 13 April 2017</div>
                                         <div className="press-main-text">
@@ -161,33 +150,29 @@ class Press extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
-                            <div className="row margin-bottom-2">
-                                <div className="col-md-10 col-md-offset-1 margin-bottom-2 press-page__text-box">
-                                    <div className="press-image col-md-4">
+                                <div className="col-md-4 press-page__text-box">
+                                    <div className="press-image col-md-12">
                                         <a href="http://www.linkiesta.it/it/article/2017/04/12/una-startup-svedese-vuole-rivoluzionare-il-settore-dei-trasporti/33846/" alt="Linkiesta">
                                             <img src="../images/linkiest-logo.png" />
                                         </a>
                                     </div>
-                                    <div className="col-md-8">
+                                    <div className="col-md-12">
                                         <h1 className="article-title">Una startup svedese vuole rivoluzionare il settore dei trasporti</h1>
                                         <div className="press-date">Linkiesta, 12 April 2017</div>
                                         <div className="press-main-text">
-Si chiama 'Einride' e vuole inserirsi nella sfida tecnologica della guida autonoma. Ma per differenziarsi dai grandi colossi come Uber, Amazon e Google, promette di trasportare il suo carico per un massimo di 200 km senza alcuna emissione nociva                                        </div>
+                                        Si chiama 'Einride' e vuole inserirsi nella sfida tecnologica della guida autonoma. Ma per differenziarsi dai grandi colossi come Uber, Amazon e Google, promette di trasportare il suo carico per un massimo di 200 km senza alcuna emissione nociva                                        </div>
                                         <div className="press-url">
                                             <a href="http://www.linkiesta.it/it/article/2017/04/12/una-startup-svedese-vuole-rivoluzionare-il-settore-dei-trasporti/33846/" alt="Linkiesta">Read the article <FontAwesome name='long-arrow-right'/></a>
                                         </div>
                                     </div>
                                     </div>
-                                </div> 
-                            <div className="row margin-bottom-2">
-                                <div className="col-md-10 col-md-offset-1 margin-bottom-2 press-page__text-box">
-                                    <div className="press-image col-md-4">
+                                <div className="col-md-4 press-page__text-box">
+                                    <div className="press-image col-md-12">
                                         <a href="http://thebridge.jp/2017/04/meet-t-pod-an-autonomous-electric-truck-that-can-also-be-controlled-remotely" alt="The bridge">
                                             <img src="../images/the-bridge.png" />
                                         </a>
                                     </div>
-                                    <div className="col-md-8">
+                                    <div className="col-md-12">
                                         <h1 className="article-title">スウェーデン発、遠隔操作もできる自動運転の電気トラック「T-pod</h1>
                                         <div className="press-date">The Bridge, 16 April 2017</div>
                                         <div className="press-main-text">

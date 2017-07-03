@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
+import Video from '../components/Video.jsx'
 import Newsletter from '../components/Newsletter.jsx';
 
 class Contact extends React.Component {
@@ -69,6 +70,9 @@ class Contact extends React.Component {
                                     Distance on one charge: 200km (124 miles)<br />
                                 </div>
                             </div>
+                        </div>
+                        <div className="start-page__video">
+                            <Video />
                         </div>
                     </div>
                     <Newsletter />

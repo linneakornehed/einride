@@ -69,6 +69,17 @@
 }
 
 @media only screen and (max-width: 760px) {
+    .footer-class-2 {
+        justify-content: left;
+    }
+
+    .logo-footer__container {
+        justify-content: left;
+    }
+
+    .logo-footer {
+        margin: 2rem 0;
+    }
     
     .dropdown-menu {
         padding: 1rem 0;
@@ -185,7 +196,7 @@
     }
 
     .section__small-box {
-            min-height: 310px!important;
+            min-height: 100px!important;
     }
     .header-section .main-title {
         font-size: 4rem!important;

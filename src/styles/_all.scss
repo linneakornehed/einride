@@ -8,7 +8,7 @@ body {
     font-family: 'Karla', sans-serif;
     min-height: 100%;
     display: flex;
-    font-size: 18px;
+    font-size: 14px;
     flex-direction: column;
     vertical-align: baseline;
     -webkit-font-smoothing: antialiased;
@@ -24,7 +24,6 @@ body {
 .wrapper {
     min-height: calc(100vh - 50px);
     flex: 1;
-    margin-top: 7.75rem;
 }
 
 .start-container {
@@ -57,7 +56,7 @@ h4 {
 
 a {
     font-weight: 400;
-    color: $color-primary-1;
+    color: $color-primary-4;
     -webkit-transition: .25s ease-in;
     transition: .25s ease-in;
     cursor: pointer;
@@ -100,8 +99,8 @@ a {
 
 
 .nav > a {
-    padding: 18px;
-    font-size: 1.6rem!important;
+    margin: 18px;
+    font-size: 1.4rem!important;
 }
 
 
@@ -134,7 +133,7 @@ a {
     padding-bottom: 30px;
     font-weight: 400;
     color: #4c4c4c!important;
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
 }
 
 .navbar-default {
@@ -148,7 +147,7 @@ a {
 
 .navbar-header > svg {
     fill: $color-white;
-    width: 18rem;
+    width: 8rem;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -168,7 +167,7 @@ a {
 }
 
 .navbar-default .navbar-nav > a.is-active {
-    background-color: $color-grey-0;
+    border-bottom: 3px solid $color-grey-7;
 }
 
 .navbar-default .navbar-toggle {
@@ -190,6 +189,7 @@ a {
 .navbar-brand {
     padding: 1.5rem 0;
     line-height: 45px;
+    margin-left: 5px!important;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
@@ -222,7 +222,7 @@ a {
 a.dropdown-menu-item {
     color: $color-black;
     border-bottom: 1px solid $color-grey-2;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     &:last-child {
         border-bottom: none;
     }
@@ -242,10 +242,9 @@ a.dropdown-menu-item {
 
 .article-title {
     font-size: 2rem;
-    text-transform: uppercase;
     margin-top: 0;
-    font-weight: 700;
-    line-height: 2.65rem;
+    font-weight: 600;
+    line-height: 3.15rem;
     color: $color-black;
     margin-bottom: 1.5rem;
 }
@@ -309,7 +308,7 @@ a.dropdown-menu-item {
         z-index: 10;
     }
     .newsletter-input {
-        width: 20rem!important;
+        width: 15rem!important;
     }
     .btn {
         margin-left: 5px;

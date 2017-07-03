@@ -52,9 +52,8 @@
 }
 
 .press-page__text-box {
-    padding: 3rem;
+    padding: 2rem 5rem;
     background-color: $color-white;
-    min-height: 30rem;
 }
 
 .press-date {
@@ -69,13 +68,13 @@
 }
 
 .press-image {
-    height: 24rem;
-    line-height: 22rem;
+    height: 8rem;
+    line-height: 0rem;
+        display: flex;
+        justify-content: center;
     img {
         height: auto;
-        max-width: 22rem;
-        padding-right: 10px;
-        padding-left: 10px;
+        max-width: 18rem;
         margin-right: auto;
         margin-left: auto;
     }

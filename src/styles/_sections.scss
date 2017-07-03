@@ -1,17 +1,16 @@
 .grey-section {
-    background-color: $color-grey-0;
-    padding: 60px 2.5% 65px;
+    background-color: $color-white;
+    padding: 50px 2.5% 55px;
 }
 
 .light-section {
-    padding: 60px 2.5% 5px;
+    padding: 0px 2.5% 5px;
 }
 
 .section {
     &__small-box {
-        background: $color-white;
-        min-height: 450px;
-        padding: 3.5rem;
+        min-height: 150px;
+        padding: 2.5rem;
         word-wrap: break-word;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -34,7 +33,7 @@
     background: linear-gradient(
                      rgba(20,20,20, .8), 
                      rgba(20,20,20, .6)),
-    url(../images/rain.png);
+    url(../images/Tpod_Material4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +54,10 @@
 
 .image-container--product {
     padding: 100px 2.5% 125px;
-    background-color: $color-aqua;
+    background: linear-gradient(
+                     rgba(20,20,20, .8), 
+                     rgba(20,20,20, .6)),
+    url(../images/Tpod_Material10.jpg);
     background-repeat: no-repeat;
     background-size: cover;   
     min-height: 40rem;
@@ -64,8 +66,12 @@
 
 .image-container--press {
     padding: 100px 2.5% 125px;
-    background-color: $color-grey-blue;
+    background: linear-gradient(
+                     rgba(20,20,20, .7), 
+                     rgba(20,20,20, .5)),
+    url(../images/Tpod_Material6.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;   
     min-height: 40rem;
 }
@@ -76,8 +82,8 @@
     background: linear-gradient(
                      rgba(20,20,20, .7), 
                      rgba(20,20,20, .5)),
-    url(../images/road.png);
-    background-position: bottom;
+    url(../images/Tpod_Material3.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
     min-height: 40rem;
@@ -90,30 +96,28 @@
     min-height: 40rem;
 }
 
-
-
 .header-section {
 
     .main-title {
         color: $color-white;
-        font-family: 'Dosis', 'Roboto', Arial, Helvetica, sans-serif;
         line-height: 6rem;
         text-align: center;
-        font-size: 5.5rem;
+        font-size: 3.5rem;
         text-transform: none;
-        font-weight: 100;
+        font-weight: 300;
         padding-bottom: 1rem;
         margin-bottom: 0;
     }
     &__text {
         color: $color-white;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         text-align: center;
-        max-width: 57%;
+        max-width: 65%;
         padding-right: 15px;
         padding-left: 15px;
         margin-right: auto;
         margin-left: auto;
+        font-weight: 300;
         
     }
 }
@@ -135,7 +139,6 @@
     &__text-box {
         padding: 40px 45px 15px;
         min-height: 445px;
-        background-color: $color-white;
     }
 }
 

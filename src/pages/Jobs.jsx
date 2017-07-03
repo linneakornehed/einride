@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
+import Newsletter from '../components/Newsletter.jsx';
+
 
 class Jobs extends React.Component {
     constructor(props) {
@@ -49,16 +51,9 @@ class Jobs extends React.Component {
                                 <div className="section__main-text">
                                     We are simplifying the concept of transportation – effectively removing vehicles, and giving the cargo wheels.
                                     <br />
-                                    
-                                    { this.state.isToggleOn ?
-                                        (<div>
-                                                                                <br />
                                     We are rethinking the entire supply chain infrastructure from the ground up.<br /><br />
-                                            With this, we are giving the drivers a new working place, driving our T-pods remotely. This means that the driver can take a coffee break when needed, have a shorter way to work and also be able t get home to family and/or friends every day and not sleeping away from home in order to do their job. We will also create new jobs in terms of maintaining the infrastructure, and safety checking the systems as well as the T-Pod. 
-                                            Our first estimation is that we will need approximately 200 employees, which includes drivers, IT developers, production engineers and lawyers. In this way we are also creating new jobs. 
-                                        <br /><button  className="show-more-button" onClick={this.handleClick}>Read less</button>
-                                        </div>)
-                                        : <button  className="show-more-button" onClick={this.handleClick}>Read more</button>}
+                                    With this, we are giving the drivers a new working place, driving our T-pods remotely. This means that the driver can take a coffee break when needed, have a shorter way to work and also be able t get home to family and/or friends every day and not sleeping away from home in order to do their job. We will also create new jobs in terms of maintaining the infrastructure, and safety checking the systems as well as the T-Pod. 
+                                    Our first estimation is that we will need approximately 200 employees, which includes drivers, IT developers, production engineers and lawyers. In this way we are also creating new jobs. 
                                 </div>
                                 </div>
                             </div>
@@ -81,8 +76,8 @@ class Jobs extends React.Component {
                             </p>
                         </div>
                         <div className="main-text col-md-4 job-page__column">
-                            <h4 className="job-page__title">CIO</h4>
-                            <p>We are looking for a CIO to join the founding team. You will build and design our operating systems and integrate the solution towards our customers.
+                            <h4 className="job-page__title">PR / Marketing</h4>
+                            <p>We are looking for PR / Marketing to join the founding team. You will build and market Einride brand.
                                 <br />
                                 <br />
                                 Email: <a>jobs@einride.eu</a>
@@ -98,6 +93,7 @@ class Jobs extends React.Component {
                 </div>
                 </div>
             </div>
+            <Newsletter />
             </div>
             <Footer />
         </div>

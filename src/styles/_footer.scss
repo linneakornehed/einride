@@ -1,15 +1,13 @@
 .footer-container {
     box-shadow: inset 1px 1px 3px 1px rgba(0,0,0,.06);
-    background: $color-grey-0;
+    background: $color-primary-5;
     color: #757575;
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 2rem;
 }
 
 .footer-class {
-    padding: 45px 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -18,7 +16,8 @@
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 4.5rem 0rem;
+    padding: 1.5rem 0rem;
+    padding-top: 1rem;
     justify-content: center;
 
     .footer-heading {
@@ -28,11 +27,14 @@
     .info, .info-link {
         padding: 1rem 2rem;
         display: block;
+        font-weight: 300;
     }
 }
 
 .info a {
-    color: $color-grey-5;
+    color: $color-white;
+    font-weight: 300;
+    font-size: 1.4rem;
 }
 
 .info-text {
@@ -42,6 +44,7 @@
 .info-link {
     display: inline-block!important; 
     justify-content: center;
+    font-weight: 300;
 }
 
 .border {
@@ -59,8 +62,25 @@
     justify-content: center;
     padding: 0rem 0rem;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 4rem 0;
+    padding-top: 0rem;
     font-size: 1.4rem;
-    color: $color-grey-5;
-    border-top: 1px solid #c9c9c9;
+    color: $color-grey-1;
+}
+
+.logo-footer {
+    margin: 2rem;
+    margin-bottom: 8rem;
+
+    svg {
+        width: 18rem;
+        fill: $color-white;
+        }
+    &__container {
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
 }

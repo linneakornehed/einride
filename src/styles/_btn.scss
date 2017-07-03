@@ -10,17 +10,19 @@
 }
 
 .btn {
-    background-color: $color-primary;
+    background-color: $color-greyblue-1;
     color: $color-white;
-    text-transform: uppercase;
-    font-weight: 700;    color: $color-white;
-    padding: 2rem 2rem;
+    font-weight: 700;    
+    color: $color-white;
+    margin-left: 1rem;
+    border: none;
+    margin-top: -2px;
+    padding: 1.2rem 3rem;
     outline: none;
     border-radius: 0;
     transition: 0.2s ease-in;
     &:hover {
         color: $color-white;
-        background-color: #2e8a54;
     }
     &:focus {
         color: $color-white;
@@ -32,15 +34,14 @@
 }
 
 .show-more-button {
+    font-size: 1.2rem;
+    text-transform: uppercase;
     background-color: transparent;
     padding: 1rem 2rem;
-    border-radius: 5px;
-    border: 2px solid $color-grey-3;
-    font-weight: 600;
+    border: 1px solid $color-grey-3;
+    font-weight: 500;
     user-select: none;
     margin-top: 2rem;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
     &:focus {

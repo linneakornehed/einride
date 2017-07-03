@@ -1,8 +1,7 @@
 .socials {
     display: flex;
     justify-content: center;
-    padding: 2.5rem 0rem;
-    border-bottom: 1px solid #c9c9c9;
+    padding: 3.5rem 0rem;
 
     a {
         padding: 1rem 1.5rem;
@@ -12,20 +11,24 @@
 
 .social-item {
     padding: 1rem;
+    color: $color-white;
+    .fa {
+        font-size: 24px;
+    }
 }
 
 .social-linkedin {
-    width: 2rem;
+
 }
 
 .social-twitter {
-    width: 2rem;
+
     margin-top: 0.2rem;
 }
 .social-facebook {
-    width: 2rem;
+
 }
 
 .social-instagram {
-    width: 2rem;
+
 }

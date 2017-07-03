@@ -3,12 +3,16 @@ import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Newsletter from './components/Newsletter.jsx'
 import Video from './components/Video.jsx'
+import FontAwesome from 'react-fontawesome';
 import {Link} from 'react-router'
 
 class App extends Component {   
     constructor(props) {
         super(props)
-        this.state = {isToggleOn: false}
+        this.state = { 
+                    isToggleOn: false,
+                    videoURL: 'https://youtu.be/CO5ULbfsY20'
+        }
         
         this.handleClick = this.handleClick.bind(this);
     }
@@ -25,103 +29,23 @@ class App extends Component {
         <div className="wrapper">
             <div className="App-header">
                 <Header />
+                    <video id="background-video" loop autoPlay>
+                        <source src={this.state.videoURL} type="video/mp4" />
+                        <source src={this.state.videoURL} type="video/ogg" />
+                        Your browser does not support the video tag.
+                    </video>
                     <div className="start-page">
                         <div className="start__intro">
                             <div className="start__text-box">
                                 <h1 className="start__header-title">
-                                    This isn’t just a company. It’s a movement.
+                                   We're installing the world's first completely emission-free, road-based transportation system
                                 </h1>
                                 <div className="start__main-text">
-                                Einride is installing the world’s first completely emission-free, road-based transportation system. We are rethinking the entire transport infrastructure from the ground up, creating the transport solution of the future.
                                 </div>
-                                <Link to="/pressrelease" className="start__button">Learn more</Link>
                             </div>
                             
                         </div>
-                            <div className="container grey-section">
-                                <div className="row">
-                                    <div className="col-md-6 margin-bottom-2">
-                                        <div className="about-page__text-box">
-                                            <h1 className="article-title">Our vision</h1>
-                                            <div className="main-text">
-                                                
-                                                Our vision is to enhance the lives of a billion people through the delivery of a global, impact-positive transport infrastructure.
-                                                <br /><br />
-                                                That means we don’t believe our work is done when we’re carbon neutral. Our design process is driven by aiming to have a net positive impact – whether that might be improving the lives of transport workers, or reducing road traffic accidents, every element of our system aims to have a measurable positive impact on the planet.
-                                                <br /><br />
-                                                With a global vision, we believe that once we’ve improved the lives of a billion people, we will have reached terminal velocity, and achieving our mission will just be a matter of time.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6 margin-bottom-2">
-                                        <div className="start-page__image-block-1">
-                
-                                        </div>
-                                    </div>
-                                </div> 
-                                <div className="row second-row">
-                                    <div className="col-md-6 margin-bottom-2 hidden-mobile">
-                                        <div className="start-page__image-block-2">
-                        
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6 margin-bottom-2">
-                                        <div className="about-page__text-box">
-                                            <h1 className="article-title">Our mission</h1>
-                                            <div className="main-text">
-                                                To transform the movement of goods from a negative planetary impact to a positive one.
-                                                <br /><br />
-                                                Our mission is to eradicate all negative effects that the transportation of goods has on the planet, by replacing the existing infrastructure with an alternative that has a net positive impact.
-                                                <br /><br />
-                                                Our intelligent infrastructure provides more improvements than infringements on both the planet and those living on it. From noise reduction to zero fossil fuel consumption, the Einride process at its full potential will transform the way the world transports its goods, and in turn, transform the world.
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                 
-                                <div className="row second-row">
-                                    <div className="col-md-4 margin-bottom-2">
-                                        <div className="about-page__text-box green-bg">
-                                            <div className="main-text quote">
-                                                <div className="quote-icon-container">
-                                                    <img className="quote-icon" src="./images/quotes.svg" />
-                                                </div>
-                                            We believe that with innovation, technology and commitment, no problem can’t be solved. No mountain is insurmountable.                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-8 margin-bottom-2 hidden-mobile">
-                                        <div className="about-page__image-box-2"></div>
-                                    </div>
-                                </div> 
-                            <div className="start-page__video">
-                                <Video />
-                            </div>
-                          </div>
-                            <div className="start-page__section-2">
-                                <h4 className="section-title"></h4>
-                                <div className="col-md-12">
-                                    <div className="col-md-4 start-page__column">
-                                        <img className="start-page__icon" src="./images/cloud-icon.svg" />
-                                        <div className="start-page__column--title">Environment</div>
-                                        <div className="start-page__column--text">Carbon-neutral electric vehicles that lower the environmental impact</div>
-                                    </div>
-                                    <div className="col-md-4 start-page__column">
-                                        <img className="start-page__icon start-page__icon--wheel" src="./images/chain-icon.svg" />
-                                        <div className="start-page__column--title">Reduced cost </div>
-                                        <div className="start-page__column--text">
-                                            Industry agnostic supply chain solutions. Create an enhanced cost efficiency with transports
-                                        </div>
-                                    </div>
-                                    <div className="col-md-4 start-page__column">
-                                        <img className="start-page__icon start-page__icon--wheel" src="./images/wheel-icon-2.svg" />
-                                        <div className="start-page__column--title">Self- and remote drive</div>
-                                     <div className="start-page__column--text">
-                                        Self-drive technology. Driver centres for remote driving. We will improve industry standards for the workers and create new kinds of jobs
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                                <Newsletter />
+                        <Newsletter />
                     </div>
                     </div>
                 <div>
