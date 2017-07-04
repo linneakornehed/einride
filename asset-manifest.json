@@ -1,8 +1,15 @@
 {
-  "main.css": "static/css/main.5c7dfb51.css",
-  "main.css.map": "static/css/main.5c7dfb51.css.map",
-  "main.js": "static/js/main.da31bdc1.js",
-  "main.js.map": "static/js/main.da31bdc1.js.map",
+  "main.css": "static/css/main.9debc80b.css",
+  "main.css.map": "static/css/main.9debc80b.css.map",
+  "main.js": "static/js/main.dd26fc3e.js",
+  "main.js.map": "static/js/main.dd26fc3e.js.map",
+  "static/media/Tpod_Material1.jpg": "static/media/Tpod_Material1.e33f3b47.jpg",
+  "static/media/Tpod_Material10.jpg": "static/media/Tpod_Material10.7349cfa0.jpg",
+  "static/media/Tpod_Material2.jpg": "static/media/Tpod_Material2.9d0ef74d.jpg",
+  "static/media/Tpod_Material3.jpg": "static/media/Tpod_Material3.a4c9b570.jpg",
+  "static/media/Tpod_Material4.jpg": "static/media/Tpod_Material4.2070f3e1.jpg",
+  "static/media/Tpod_Material5.jpg": "static/media/Tpod_Material5.2a9114ab.jpg",
+  "static/media/Tpod_Material6.jpg": "static/media/Tpod_Material6.26a67abd.jpg",
   "static/media/glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
   "static/media/glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
   "static/media/glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
@@ -10,9 +17,6 @@
   "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2",
   "static/media/mobile-bg.jpg": "static/media/mobile-bg.3b5f2442.jpg",
   "static/media/podd.png": "static/media/podd.7aecfdef.png",
-  "static/media/rain.png": "static/media/rain.de0bab18.png",
-  "static/media/road.png": "static/media/road.b9a7ecc5.png",
   "static/media/robert.jpg": "static/media/robert.24bd4bff.jpg",
-  "static/media/skynight.png": "static/media/skynight.80758b54.png",
-  "static/media/tpodd.png": "static/media/tpodd.907981e2.png"
+  "static/media/skynight.png": "static/media/skynight.80758b54.png"
 }
