@@ -7,7 +7,7 @@ class SecondHeader extends Component {
             <div className="secondheader__container">
                 <Link activeClassName='is-active' className="secondheader__item" to="/product">The T-pod</Link>
                 <Link activeClassName='is-active' className="secondheader__item" to="/about">The team</Link>
-                <Link activeClassName='is-active' className="secondheader__item" to="/pressReleasePage">Press Material</Link>
+                <Link activeClassName='is-active' className="secondheader__item" to="/pressmaterial">Press Material</Link>
             </div>
         )
     }    

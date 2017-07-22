@@ -26,7 +26,7 @@ ReactDOM.render(
         <Route path="investor" component={Investor}/>
         <Route path="vision" component={Vision}/>
         <Route path="contact" component={Contact}/>
-        <Route path="pressReleasePage" component={PressReleasePage}/>
+        <Route path="pressmaterial" component={PressReleasePage}/>
         <Route path="pressReleaseTpod" component={PressReleaseTpod}/>
         <Route path="pressReleaseEinride" component={PressReleaseEinride}/>
    </Router>, document.getElementById('root'))
