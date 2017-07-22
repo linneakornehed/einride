@@ -34,7 +34,7 @@ body {
 }
 
 p {
-    color: $color-grey-4!important;
+    color: $color-grey-7!important;
 }
 
 h1 {
@@ -43,8 +43,8 @@ h1 {
 }
 
 h4 {
-    text-transform: uppercase;
     color: $color-black;
+    font-size: 20px;
 }
 
 .section-title {
@@ -100,7 +100,7 @@ a {
 
 .nav > a {
     margin: 18px;
-    font-size: 1.4rem!important;
+    font-size: 1.6rem!important;
 }
 
 
@@ -133,7 +133,7 @@ a {
     padding-bottom: 30px;
     font-weight: 400;
     color: #4c4c4c!important;
-    font-size: 1.4rem !important;
+    font-size: 1.6rem !important;
 }
 
 .navbar-default {
@@ -147,6 +147,10 @@ a {
 
 .navbar-header > svg {
     fill: $color-white;
+    width: 8rem;
+}
+
+.navbar-header__logo {
     width: 8rem;
 }
 
@@ -174,20 +178,20 @@ a {
     border-color: transparent;
 
 }
-.navbar-default .navbar-toggle   .icon-bar {
-    background-color: $color-grey-5;
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $color-grey-3;
     width: 25px;
-    height: 3px;
+    height: 4px;
 }
 
 .navbar-toggle {
     margin-right: 0px;
-    float: left;
+    float: right;
     margin-top: 18px;
 }
 
 .navbar-brand {
-    padding: 1.5rem 0;
+    padding: 1.75rem 0;
     line-height: 45px;
     margin-left: 5px!important;
 }
@@ -222,14 +226,17 @@ a {
 a.dropdown-menu-item {
     color: $color-black;
     border-bottom: 1px solid $color-grey-2;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     &:last-child {
         border-bottom: none;
     }
 }
 
 .navbar-toggle .icon-bar + .icon-bar {
-    margin-top: 5px;
+    margin-top: 4px!important;
+}
+.navbar-toggle .icon-bar {
+    border-radius: 1px;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -241,9 +248,9 @@ a.dropdown-menu-item {
 }
 
 .article-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 0;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 3.15rem;
     color: $color-black;
     margin-bottom: 1.5rem;
@@ -296,7 +303,7 @@ a.dropdown-menu-item {
         }
     }
     .navbar-default .navbar-toggle .icon-bar {
-            background-color: $color-grey-5;
+            background-color: $color-grey-3;
     }
 
     .navbar-header > svg {
@@ -308,7 +315,7 @@ a.dropdown-menu-item {
         z-index: 10;
     }
     .newsletter-input {
-        width: 15rem!important;
+        width: 20rem!important;
     }
     .btn {
         margin-left: 5px;

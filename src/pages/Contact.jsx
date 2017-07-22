@@ -15,24 +15,14 @@ class Contact extends React.Component {
                     <Header />
                     <div className="page-section">
                     <div className="header-section">
-                        <div className="image-container--contact">
                         <div className="conatiner">
-                            <h1 className="main-title">
-                               Contact us
-                            </h1>
-                            <div className="header-section__text">
-                                Our vision is to enhance the lives of a billion people through the delivery of a global, impact-positive supply chain infrastructure.
+                            <div className="main-title-wh">
+                               Contact
                             </div>
                         </div>
                     </div>
-                    </div>
                     <div className="grey-section">
                     <div className="container">
-                        <div className="col-md-12">
-                            <h3 className="main-title contact-title">
-                               We are looking forward to hearing from you
-                            </h3>
-                        </div>
                         <div className="col-md-12">
                         <div className="col-md-4">
                             <div className="small-box no-bg">

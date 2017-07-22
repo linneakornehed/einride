@@ -1,0 +1,19 @@
+.secondheader {
+
+    &__container {
+        background-color: $color-grey-8;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        color: $color-white!important;
+        padding: 0.25rem 2rem;
+        font-weight: 500;
+        font-size: 1.6rem!important;
+        a:hover {
+            color: $color-white;
+        }
+    }
+
+}

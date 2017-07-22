@@ -17,25 +17,20 @@ class Investor extends React.Component {
                         <div className="image-container--invest">
                         <div className="conatiner">
                             <h1 className="main-title">
-                                 Future of transport
+                                 Investor relations
                             </h1>
-                            <div className="header-section__text">
-                                Einride is creating the sustainable solution for transport by creating and rethinking the transport service of tomorrow.
-                                We are looking for investors that, together with us, would like to create and build the transport service for a sustainable future. 
-                            </div>
                         </div>
                     </div>
                     </div>
                 <div className="grey-section">
                     <div className="container">
                         <div className="col-md-12">
-                            <h3 className="main-title">
-                               Infrastructure
-                            </h3>
-                        </div>
-                        <div className="col-md-12">
                             <div className="">
                                 <div className="main-text content-wrapper">
+                                Einride is creating the sustainable solution for transport by creating and rethinking the transport service of tomorrow.
+                                We are looking for investors that, together with us, would like to create and build the transport service for a sustainable future. 
+                                                                <br />
+                                <br />
                                 We are building a new transportation infrastructure that doesn’t just improve the status quo, but replaces it. 
                                 <br />
                                 <br />

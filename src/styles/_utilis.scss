@@ -6,6 +6,14 @@
     margin-bottom: 2rem;
 }
 
+.margin-bottom-4 {
+    margin-bottom: 4rem;
+}
+
+.margin-bottom-6 {
+    margin-bottom: 6rem;
+}
+
 .thank-you {
     border: none!important;
     margin: 8rem!important;
@@ -36,24 +44,14 @@
     width: 100%;
 }
 
-.blue-box {
-    background-color: $color-grey-blue;
-    h4 {
-        color: $color-white;
-    }
-    .main-text {
-        color: $color-white;
-    }
-}
-
 .no-bg {
     padding: 0px;
     text-align: center;
 }
 
 .press-page__text-box {
-    padding: 2rem 5rem;
-    background-color: $color-white;
+    padding: 2rem 3rem;
+    background-color: transparent;
 }
 
 .press-date {
@@ -70,8 +68,9 @@
 .press-image {
     height: 8rem;
     line-height: 0rem;
-        display: flex;
-        justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img {
         height: auto;
         max-width: 18rem;

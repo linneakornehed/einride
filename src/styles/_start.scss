@@ -1,5 +1,4 @@
 .start {
-
     &__link {
         color: $color-white;
         .fa-long-arrow-right {
@@ -14,22 +13,36 @@
 
     &__intro {
         max-width: 100%;
-        padding: 2.5% 15%;
         background: url('../images/Tpod_Material5.jpg');
+        background: linear-gradient(
+                        rgba(20,20,20, .1), 
+                        rgba(20,20,20, .1)),
+        url(../images/Tpod_Material1.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         min-height: 47rem;
+        background-repeat: no-repeat;
     }
     &__text-box {
         text-align: center;
+        padding: 15rem;
+        padding-top: 18rem; 
     }
+    &__note {
+        text-transform: uppercase;
+        font-size: 2.25rem;
+        color: black;
+        margin-top: 8rem;
+        margin-bottom: 1rem;
+    }
+
     &__header-title {
         font-family: 'Karla', 'Roboto', Arial, Helvetica, sans-serif;
-        color: $color-black;
+        color: $color-white;
         font-weight: 300;
-        font-size: 3.5rem;
-        line-height: 4.75rem;
+        font-size: 3.75rem;
+        line-height: 4.2rem;
     }
     &__main-text {
         color: $color-white;

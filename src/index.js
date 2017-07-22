@@ -6,7 +6,9 @@ import Product from './pages/Product.jsx'
 import Vision from './pages/Vision.jsx'
 import Contact from './pages/Contact.jsx'
 import Press from './pages/Press.jsx'
-import Pressrelease from './pages/Pressrelease.jsx'
+import PressReleasePage from './pages/PressReleasePage.jsx'
+import PressReleaseEinride from './pages/PressReleaseEinride.jsx'
+import PressReleaseTpod from './pages/PressReleaseTpod.jsx'
 import Investor from './pages/Investor.jsx'
 import About from './pages/About.jsx'
 import { Router, Route, hashHistory } from 'react-router'
@@ -24,5 +26,7 @@ ReactDOM.render(
         <Route path="investor" component={Investor}/>
         <Route path="vision" component={Vision}/>
         <Route path="contact" component={Contact}/>
-        <Route path="pressrelease" component={Pressrelease}/>
+        <Route path="pressReleasePage" component={PressReleasePage}/>
+        <Route path="pressReleaseTpod" component={PressReleaseTpod}/>
+        <Route path="pressReleaseEinride" component={PressReleaseEinride}/>
    </Router>, document.getElementById('root'))

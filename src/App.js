@@ -11,7 +11,6 @@ class App extends Component {
         super(props)
         this.state = { 
                     isToggleOn: false,
-                    videoURL: 'https://youtu.be/CO5ULbfsY20'
         }
         
         this.handleClick = this.handleClick.bind(this);
@@ -29,18 +28,11 @@ class App extends Component {
         <div className="wrapper">
             <div className="App-header">
                 <Header />
-                    <video id="background-video" loop autoPlay>
-                        <source src={this.state.videoURL} type="video/mp4" />
-                        <source src={this.state.videoURL} type="video/ogg" />
-                        Your browser does not support the video tag.
-                    </video>
                     <div className="start-page">
                         <div className="start__intro">
                             <div className="start__text-box">
-                                <h1 className="start__header-title">
-                                   We're installing the world's first completely emission-free, road-based transportation system
-                                </h1>
-                                <div className="start__main-text">
+                                <div className="start__header-title">
+                                    Installing the world's first emission-free, road-based transportation system
                                 </div>
                             </div>
                             

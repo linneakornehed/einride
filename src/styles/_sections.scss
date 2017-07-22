@@ -1,4 +1,8 @@
 .grey-section {
+    background-color: $color-grey-1;
+    padding: 50px 2.5% 55px;
+}
+.white-section {
     background-color: $color-white;
     padding: 50px 2.5% 55px;
 }
@@ -29,71 +33,82 @@
 }
 
 .image-container {
-    padding: 100px 2.5% 125px;
+    padding: 100px 2.5% 80px;
     background: linear-gradient(
-                     rgba(20,20,20, .8), 
-                     rgba(20,20,20, .6)),
+                     rgba(20,20,20, .2), 
+                     rgba(20,20,20, .1)),
     url(../images/Tpod_Material4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 40rem;
+    min-height: 30rem;
 }
 
 .image-container--about {
-    padding: 100px 2.5% 125px;
+    padding: 100px 2.5% 80px;
     background: linear-gradient(
-                     rgba(20,20,20, .8), 
-                     rgba(20,20,20, .6)),
+                     rgba(20,20,20, .2), 
+                     rgba(20,20,20, .1)),
     url(../images/skynight.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
-    min-height: 40rem;
+    min-height: 30rem;
 }
 
 .image-container--product {
-    padding: 100px 2.5% 125px;
+    padding: 100px 2.5% 80px;
     background: linear-gradient(
-                     rgba(20,20,20, .8), 
-                     rgba(20,20,20, .6)),
+                     rgba(20,20,20, .2), 
+                     rgba(20,20,20, .1)),
     url(../images/Tpod_Material10.jpg);
     background-repeat: no-repeat;
     background-size: cover;   
-    min-height: 40rem;
+    min-height: 30rem;
 
 }
 
 .image-container--press {
-    padding: 100px 2.5% 125px;
+    padding: 100px 2.5% 80px;
     background: linear-gradient(
-                     rgba(20,20,20, .7), 
-                     rgba(20,20,20, .5)),
+                     rgba(20,20,20, .2), 
+                     rgba(20,20,20, .1)),
     url(../images/Tpod_Material6.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;   
-    min-height: 40rem;
+    min-height: 30rem;
 }
 
 
 .image-container--invest {
-    padding: 100px 2.5% 125px;
+    padding: 100px 2.5% 80px;
     background: linear-gradient(
-                     rgba(20,20,20, .7), 
-                     rgba(20,20,20, .5)),
+                     rgba(20,20,20, .2), 
+                     rgba(20,20,20, .1)),
     url(../images/Tpod_Material3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
-    min-height: 40rem;
+    min-height: 30rem;
 }
 
 
 .image-container--contact {
-    padding: 100px 2.5% 125px;
+    padding: 100px 2.5% 80px;
     background-color: $color-primary;
-    min-height: 40rem;
+    min-height: 30rem;
+}
+
+.main-title-wh {
+        color: $color-black;
+        line-height: 6rem;
+        text-align: center;
+        font-size: 3.5rem;
+        text-transform: none;
+        font-weight: 300;
+        padding-bottom: 7rem;
+        margin-bottom: 0;  
 }
 
 .header-section {
@@ -144,11 +159,18 @@
 
 .start-page {
     &__image-box {
-        min-height: 445px;
-        background: url(../images/tpodd.png);
+        min-height: 355px;
+        background: url(../images/Tpod_Material10.jpg);
         background-position: 30% 20%;
         background-repeat: no-repeat;
         background-size: cover;     
+    }
+    &__image-box-2 {
+        background: url(../images/Tpod_Material2.jpg);
+        min-height: 445px;
+        background-position: 30% 20%;
+        background-repeat: no-repeat;
+        background-size: cover; 
     }
 }
 

@@ -36,7 +36,7 @@ h1 {
 
 .navbar-nav {
   float: right;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;    
   }
 
@@ -55,6 +55,7 @@ h1 {
     }
 
     .navbar-header > svg {
+        width: 8rem;
         fill: $color-black;
     }
 .navbar-nav > li > a {
@@ -90,8 +91,8 @@ h1 {
   border-color: transparent; }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: $color-grey-5;
-  width: 25px; }
+  background-color: $color-grey-3;
+  width: 23px; }
 
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 5px; }
@@ -105,7 +106,7 @@ h1 {
     display: flex;
     background-color: $color-grey-7;
     text-align: center;
-    min-height: 20rem;
+    min-height: 22rem;
 
 }
 

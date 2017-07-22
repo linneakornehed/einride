@@ -7,7 +7,7 @@ const BasicInputBox = React.createClass({
         return (
             <div className="input-field">
                 <br/>
-                <input type="text" ref="input-field" onChange={this.props.valChange} value={ this.props.val} className="newsletter-input" placeholder="Sign up with your email"/>
+                <input type="text" ref="input-field" onChange={this.props.valChange} value={ this.props.val} className="newsletter-input" placeholder="example@email.com"/>
             </div>
         )
     }

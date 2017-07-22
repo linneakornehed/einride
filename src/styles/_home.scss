@@ -5,14 +5,14 @@
 }
 
 .main-text {
-    margin: 3rem 0;
-    line-height: 2.5rem;
-    color: $color-grey-4;
+    margin: 2rem 0;
+    line-height: 2.1rem;
+    color: $color-grey-8;
     font-size: 1.6rem;
     font-weight: 400;
     text-align: left;
     h4 {
-        font-weight: 300;
+        font-weight: 600;
         line-height: 1.5rem;
     }
 }
@@ -98,8 +98,6 @@
     }
     
     &__section-1 {
-        max-width: 1170px;
-        
         padding: 75px 2.5% 85px;
         min-height: 30rem;
         padding-right: 15px;
@@ -112,7 +110,6 @@
         }
     }
     &__section-2 {
-        max-width: 1170px;
         padding: 75px 2.5% 85px;
         min-height: 60rem;
         padding-right: 15px;
@@ -123,7 +120,6 @@
 
     }
     &__section-3 {
-        max-width: 1170px;
         padding: 75px 2.5% 85px;
          min-height: 30rem;
         padding-right: 15px;
@@ -132,7 +128,6 @@
         margin-left: auto;
     }
     &__section-4 {
-        max-width: 1170px;
         padding: 65px 2.5% 65px;
         padding-right: 15px;
         padding-left: 15px;
@@ -142,7 +137,6 @@
     
 }
 
-
 .main-text-item {
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
 }
