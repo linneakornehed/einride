@@ -21,13 +21,13 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        min-height: 47rem;
+        min-height: 70rem;
         background-repeat: no-repeat;
     }
     &__text-box {
-        text-align: center;
-        padding: 15rem;
-        padding-top: 18rem; 
+        text-align: right;
+        padding: 4rem;
+        padding-top: 12rem; 
     }
     &__note {
         text-transform: uppercase;
@@ -40,9 +40,11 @@
     &__header-title {
         font-family: 'Karla', 'Roboto', Arial, Helvetica, sans-serif;
         color: $color-white;
+        width: 400px;
         font-weight: 300;
-        font-size: 3.75rem;
-        line-height: 4.2rem;
+        font-size: 2.5rem;
+        line-height: 3.2rem;
+        float: right;
     }
     &__main-text {
         color: $color-white;

@@ -4,6 +4,7 @@ import {Link} from 'react-router';
 import SecondHeader from '../components/SecondHeader.jsx';
 import Footer from '../components/Footer.jsx';
 import Newsletter from '../components/Newsletter.jsx';
+import FontAwesome from 'react-fontawesome';
 
 class PressReleasePage extends React.Component {
 
@@ -33,7 +34,12 @@ class PressReleasePage extends React.Component {
                                         <Link to="/pressReleaseTpod">
                                             <h4>The transport vehicle of the future; introducing the T-pod</h4>
                                         </Link>
-                                        July 5th, 2017, 8:00: The first full-scale prototype transport vehicle of the future has just been unveiled by Swedish tech company, Einride. The ‘T-pod,’ an electric self-driving vehicle that is remotely controlled by drivers, is significantly smaller than today’s heavy trucks and works alongside its innovative charging stations and pioneering infrastructure. Cargo capacity: 15 standard pallets...
+                                        July 5th, 2017, 8:00: The first full-scale prototype transport vehicle of the future has just been unveiled by Swedish tech company, Einride. The ‘T-pod,’ an electric self-driving vehicle that is remotely controlled by drivers, is significantly smaller than today’s heavy trucks and works alongside its innovative charging stations and pioneering infrastructure. Cargo capacity: 15 standard pallets... 
+                                        <div className="press-url">
+                                            <Link to="/pressReleaseTpod">
+                                                Read more<FontAwesome name='long-arrow-right'/>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="col-md-12 pressReleasePage__news">
@@ -46,7 +52,12 @@ class PressReleasePage extends React.Component {
                                         <Link to="/pressReleaseEinride">
                                             <h4>Einride to change the future of transport with world’s first sustainable self-driving ‘T-pod’</h4>
                                         </Link>
-                                        April 6, 2017 - Today marks the global launch of Einride, the company that will change the modern transportation industry. Einride has created a technologically advanced system including the world’s first ‘T-pod’ which will change the future of the industry and improve the sustainability of mankind...    
+                                        April 6, 2017 - Today marks the global launch of Einride, the company that will change the modern transportation industry. Einride has created a technologically advanced system including the world’s first ‘T-pod’ which will change the future of the industry and improve the sustainability of mankind...     
+                                        <div className="press-url">
+                                            <Link to="/pressReleaseEinride">
+                                                Read more <FontAwesome name='long-arrow-right'/>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="col-md-12">
